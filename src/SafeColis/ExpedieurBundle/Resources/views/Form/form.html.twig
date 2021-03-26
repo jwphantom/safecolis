@@ -1,0 +1,33 @@
+<form id="form-recherche" method="POST" action="{{ path('safe_colis_expedieur_list_voyage')}}">
+    
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="form-group">
+                <label>Ville de départ</label>
+                <input name="lieuDepart" placeholder="Entrer une destination de départ" type="text" class="boutton-recherche  form-control" required>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <label>Ville d'arrivée</label>
+            <div class="form-group">
+                <input name="lieuArrive" id="searchTextField2" placeholder="Entrer une destination d'arrivé" type="text" class="boutton-recherche  form-control" required>
+            </div>
+        </div>
+       
+        <div class="col-sm-12 ">
+            <div class="form-group date">
+            {% set date = 'now'|date('Y-m-d')  %}
+            </div>
+        </div>
+        <div class="col-sm-12 checkbox">
+            <script>$('input[type=checkbox]').removeAttr('checked');</script>
+            <div class="form-group">
+                <input type="checkbox" class="" min="{{ date }}" id="checkboxDateDepart" name="checkboxDateDepart" > Ajouter une date?
+                <br><br>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <button type="submit" class="buttonblue">Rechercher<i class="ml--8 fa fa-long-arrow-right"></i>
+        </div>
+    </div>
+</form>

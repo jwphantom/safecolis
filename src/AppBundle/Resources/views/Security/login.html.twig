@@ -1,0 +1,73 @@
+{% extends "AppBundle::base.html.twig" %}
+
+
+{% block title %}
+{{ parent() }} - Connexion
+{% endblock %}
+
+{% block body %}
+<div class="card-header">
+    <h4>Connexion</h4>
+</div>
+
+{% if error %}
+    <div class="flash_message_danger" id="FlashMessage" >
+        <i class="fas fa-exclamation-triangle" ></i>  
+        Identifiant incorrect
+    </div>
+{% endif %}
+{% for message in app.flashes('Reinitialisation-Complete')%}
+    <div class="flash_message_success" id="FlashMessage">
+        Réinitialisation du mot de passe terminé !!!
+    </div>
+{% endfor %}
+{% for message in app.flashes('Lien-inscrip-Use')%}
+    <div class="flash_message_danger" id="FlashMessage">
+        Lien d'activation déjà utilisé
+    </div>
+{% endfor %}
+{% for message in app.flashes('compte-actif')%}
+    <div class="flash_message_success" id="FlashMessage">
+        Compte activé
+    </div>
+{% endfor %}
+
+<div class="card-body">
+    <form method="post" action="{{ path('security_login_check') }}" autocomplete="off"  class="needs-validation" novalidate="">
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control" name="_username" placeholder="service@safecolis.com" tabindex="1" required autofocus>
+            <div class="invalid-feedback">
+                Please fill in your email
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="d-block">
+                <label for="password" class="control-label">Mot de passe</label>
+                <div class="float-right">
+                    <a href="{{ path('reset_password_form')}}" class="text-small">
+                        Mot de passe oublié?
+                    </a>
+                </div>
+            </div>
+            <input id="password" type="password" class="form-control" name="_password" autocomplete="off" tabindex="2" required>
+            <div class="invalid-feedback">
+                please fill in your password
+            </div>
+        </div>
+
+        
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4" type="submit">
+                Login
+            </button>
+        </div>
+        Nouveau ? <a href="{{ path('register_form') }}">Inscription</a><br>
+        <a href="{{ path('safe_colis_home_homepage')}}">Accueill
+
+    </form>
+</div>
+{% endblock %}

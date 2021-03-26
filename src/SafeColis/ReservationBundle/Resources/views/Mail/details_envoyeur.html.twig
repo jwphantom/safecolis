@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SafeColis - Inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body style="">
+    
+
+ {% block subject  %}<br>{% endblock %}
+{% block body %}
+<div style="text-align: left; padding: 13px;  font-size: 13px;">
+        
+    <div style="text-align:left; font-weight: bold; padding-bottom: 13px;">
+        SafeColis<br><br>
+    </div>
+
+    <p>
+    {{ 'comptabilitebudle.mail.salutation'|trans({'%nom%': nom_voyageur }) }}
+    
+</p>
+<p>
+    {{ 'comptabilitebudle.mail.details_envoyeur.paragraphe1'|trans({'%nom_envoyeur%': nom_envoyeur,
+                                                    '%depart%': depart,
+                                                     '%arrive%': arrive,
+                                                     '%date%': date|date('l d F Y'),
+                                                     '%heure%': date|date('H:i')  }) }}
+
+
+    
+</p>
+<p>
+    {{ 'comptabilitebudle.mail.details_envoyeur.paragraphe2'|trans({'%nom_envoyeur%': nom_envoyeur,
+                                                    '%kilo_achete%': kilo_achete,
+                                                    '%somme_voyageur%': somme_voyageur })}}
+    
+</p>
+<p>
+    {{ 'comptabilitebudle.mail.details_envoyeur.paragraphe3'|trans({'%nom_envoyeur%': nom_envoyeur})}}:
+</p>
+<p>
+    Email : {{ email_envoyeur }}
+</p>
+<p>
+    Tél : {{ numero_Tel }}
+</p>
+<p>
+    {{ 'comptabilitebudle.mail.politesse'|trans }}
+    
+</p>
+<p>
+    {{ 'comptabilitebudle.mail.follow'|trans }}
+    : <a href="{{ app_facebook }}">Facebook</a> , 
+     <a href="{{ app_instagram }}">instagram</a>, 
+      <a href="https://twitter.com/safecolis">tweeter</a>.
+</p>
+<p>
+    Contact :
+</p>
+<ul>
+    <li>
+        <p>
+             {{ 'comptabilitebudle.client'|trans }}:  <a href="tel:+15149969835 ">+1-514-996-9835 </a>
+        </p>
+    </li>
+    <li>
+        <p>
+             {{ 'comptabilitebudle.technique'|trans }}: <a href="tel:+237690072102">+(237) 690-072-102 </a>.
+        </p>
+    </li>
+</ul>
+<p>
+    {{ 'comptabilitebudle.cordialement'|trans }}
+</p>
+<p>
+    {{ 'comptabilitebudle.signature'|trans }}
+    <br/>
+    <a href="http://www.safecolis.com/">www.safecolis.com</a>
+</p>
+<br/>
+ 
+</div>
+{% endblock %}
+</body>
+</html>

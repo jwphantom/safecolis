@@ -1,0 +1,84 @@
+{% extends "base-dash.html.twig" %}
+{% block title %}
+{{ parent() }}
+-
+{{ namepage }}
+{% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/cart.svg')}}" width="30" />
+{{ namepage }}
+{% endblock %}
+{% block body %}
+
+{% for message in app.flashes('paiement-abonnenement-annule')%}
+<div class="col-12" id="FlashMessageSuccess">
+    {{ message }}.
+</div> 
+{% endfor %}
+{% for message in app.flashes('kilo_overflow')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Vous n'avez plus de kilo disponible sur ce voyage.
+</div>
+{% endfor %}
+
+<div class="row voyages AdjustRow">
+    {% for item in result %}
+    <div class="col-md-12 col-sm-12 pb--30">
+        <!-- Post Item Start -->
+        <div class="post--item">
+            <div class="post--inner">
+                <div class="title">
+                    <h2 class="h4">
+                        <span class="title"><i class="fa fa-calendar" aria-hidden="true"></i>
+                            {{ item.voyage.datedepart|date('l,d F Y ') }} à {{ item.voyage.heuredepart('H:i') }} </span>
+                    </h2>
+                </div>
+
+                <div class="content">
+                    <div class="col-sm-12">
+                        <p><strong>{{ item.voyage.villedepart}}</strong> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+                            <strong>{{ item.voyage.villearrive}}</strong><br>  
+                            Kilo voulu :
+                            <strong>{{ item.kilovoulu}}</strong> &nbsp; Kilo restant sur ce voyage :
+                            <strong>{{ item.voyage.kilodisponible}}</strong> <br> Prix Reservation:
+                            <strong>{{ item.voyage.prixkilo * item.kilovoulu }}$</strong> </p>
+                    </div>
+                </div>
+                {% if item.etat == 0 %}
+
+                <div class="action text-right">
+                    <a href="#formAccept-{{ item.id }}" data-toggle="modal" id="buttonSuccess">Accepter <i
+                            class="fa fa-check-circle" aria-hidden="true"></i></a>
+                    <a href="#formDelete-{{ item.id }}" data-toggle="modal" id="buttonWarning">Supprimer <i
+                            class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+                {% endif %}
+                {% if item.etat == 1 and item.paye == 0 %}
+                <div class="action text-right">
+                    <a id="buttonWarning"><i class="fa fa-hourglass-start" aria-hidden="true"></i>
+Attente de paiement par l'expediteur</a>
+                </div>
+                {% endif %}
+                {% if item.etat == 1 and item.paye == 1 %}
+                <div class="action text-right">
+                    <a id="buttonSuccess"><i class="fa fa-hourglass-end" aria-hidden="true"></i>
+Payé</a>
+                </div>
+                {% endif %}
+                
+                
+
+            </div>
+        </div>
+        {% include ("SafeColisReservationBundle:Form:formAccept.html.twig") %}
+
+        {% include ("SafeColisReservationBundle:Form:formDelete.html.twig") %}
+
+        <!-- Post Item End -->
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Contact Section End -->
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "AppBundle::base.html.twig" %}
+
+
+{% block title %}
+{{ parent() }} - Inscription
+{% endblock %}
+
+{% block body %}
+<div class="card-header">
+    <h4>Inscription</h4>
+</div>
+
+{% for message in app.flashes('champs_incomplet')%}
+<div class="flash_message_danger" id="FlashMessage">Champs Incomplet</div>
+{% endfor %}
+
+{% for message in app.flashes('email_vide')%}
+<div class="flash_message_danger" id="FlashMessage">Adresse Email vide</div>
+{% endfor %}
+
+{% for message in app.flashes('terms_vide')%}
+<div class="flash_message_danger" id="FlashMessage">Accepter les conditions d'utilisation</div>
+{% endfor %}
+
+{% for message in app.flashes('Email_non_valide')%}
+<div class="flash_message_danger" id="FlashMessage">Email nom valide</div>
+{% endfor %}
+
+{% for message in app.flashes('email_existant')%}
+<div class="flash_message_danger" id="FlashMessage">Email existant</div>
+{% endfor %}
+
+<div class="card-body">
+    <form method="post" action="{{path('register_form') }}" autocomplete="off" class="needs-validation"
+        novalidate="">
+        <input type="hidden" name="_csrf_token" value="{{csrf_token('authenticate')}}" />
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" class="form-control" name="email" placeholder="service@safecolis.com"
+                tabindex="1" required autofocus>
+            <div class="invalid-feedback">
+                Adresse Email invalide
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="custom-control custom-checkbox">
+                <input type="checkbox" id="remember_me" checked name="terms" class="custom-control-input" tabindex="3">
+                <label class="custom-control-label" for="remember-me">Condition d'utilisation</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-lg btn-block" tabindex="4" type="submit">
+                Valider
+            </button>
+        </div>
+        Inscrit ? <a href="{{ path('security_login_form')}}">Connexion</a>
+    </form>
+</div>
+{% endblock %}

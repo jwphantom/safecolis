@@ -1,0 +1,65 @@
+{% extends "base-dash.html.twig" %}
+{% block title %}
+{{ parent() }}
+-
+{{ namepage }}
+{% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/experiment-results.svg')}}" width="30" />
+{{ namepage }}
+{% endblock %}
+{% block body %}
+{% for message in app.flashes('voyage_trouve')%}
+<div class="col-12" id="FlashMessageSuccess">
+    {{ result|length}}
+    Voyage(s) trouvé(s)
+</div>
+{% endfor %}
+
+<div class="col-12" id="buttonSearchInResult">
+    Chercher à nouveau?
+</div>
+
+
+<div class="contact--form searchInResult" style="display: none">
+    {{ include('SafeColisExpedieurBundle:Form:form.html.twig') }}
+</div>
+
+
+<div class="row voyages AdjustRow">
+    {% for item in result %}
+    <div class="col-md-12 col-sm-12 pb--30">
+        <!-- Post Item Start -->
+        <div class="post--item">
+            <div class="post--inner">
+                <div class="title">
+                    <h2 class="h4">
+                        <span class="title"><i class="fa fa-calendar" aria-hidden="true"></i>
+                            {{ item.datedepart|date('l,d F Y ') }} à {{ item.heuredepart('H:i') }} </span>
+                    </h2>
+                </div>
+
+                <div class="content">
+                    <div class="col-sm-12">
+                        <p><strong>{{ item.villedepart}}</strong> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+                            <strong>{{ item.villearrive}}</strong><br>  
+                            Kilo disponible : <strong>{{ item.kilodisponible}}kg</strong> &nbsp; Prix par kilo:
+                            <strong>${{ item.prixkilo }}</strong> </p>
+                    </div>
+                </div>
+                <div class="action text-right">
+                    <a href="#formRerserver-{{ item.id }}" data-toggle="modal" class="btn btn-default">Reserver<i class="ml--5 fa fa-long-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Post Item End -->
+            {% include ("SafeColisExpedieurBundle:Form:formReserver.html.twig") %}
+
+    </div>
+
+    {% endfor %}
+</div>
+
+<!-- Contact Section End -->
+{% endblock %}

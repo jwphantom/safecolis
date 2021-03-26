@@ -1,0 +1,36 @@
+<!-- Login Form Start -->
+<div id="formRerserver-{{ item.id }}" class="login--form modal fade">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal-body">
+                <div class="title">
+                    <h2 class="h4">Reservation</h2>
+                </div>
+                <form action="{{ path('safe_colis_expedieur_reservation') }}" method="POST" data-form="validate">
+
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">Kilo demandé <span class="form-mandatory">*</spa></label>
+                            <input name="kilovoulu" id="kilovoulu" placeholder="Kilo Demandé" type="number" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="form-group">
+                            <label class="control-label">Colis à transporter <span class="form-mandatory">*</spa></label>
+                            <select multiple name="colis[]" id="colis" class="form-control">
+                                {% for colis in colisautorise %}
+                                <option value="{{colis}}">{{ colis }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <input type="hidden" name="idvoyage" value="{{item.id}}">
+                    <button id="reserver" type="submit" class="btn btn-block btn-default text-uppercase">Reserver</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Form End -->

@@ -1,0 +1,23 @@
+safe_colis_home_homepage:
+    path:     /
+    defaults: { _controller: SafeColisHomeBundle:Home:index }
+
+
+safe_colis_home_politique:
+    path:     /politique
+    defaults: { _controller: SafeColisHomeBundle:Home:politique }
+ 
+safe_colis_home_term:
+    path:     /terms_users
+    defaults: { _controller: SafeColisHomeBundle:Home:terms_users }
+ 
+safe_colis_home_contact:
+    path:     /contact
+    defaults: { _controller: SafeColisHomeBundle:Home:contact }
+    requirements:
+      _locale:  en|fr|de|es
+
+safe_colis_mail_contact:
+    path:     /contact/send-mail
+    defaults: { _controller: SafeColisHomeBundle:Home:mailHelp }
+    

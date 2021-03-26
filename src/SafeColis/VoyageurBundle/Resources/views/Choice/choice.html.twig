@@ -1,0 +1,69 @@
+{% extends "base-dash.html.twig" %}
+
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/choice.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+
+{% block body %}
+{% for message in app.flashes('ajout-voyage')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Voyage Transmis à l'administration pour validation.
+</div>
+{% endfor %}
+
+
+<div class="row AdjustRow" data-scroll-reveal="group">
+    <div class="col-md-4 col-xs-6 col-xxs-12 pb--30" style="cursor: pointer"
+        onclick="location.href='{{ path('safe_colis_voyageur_add', {'mode':'aerien'}) }}'">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+                <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">Aérien</h3>
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+
+    <div class="col-md-4 col-xs-6 col-xxs-12 pb--30"
+        onclick="location.href='{{ path('safe_colis_voyageur_add', {'mode':'routier'}) }}'" style="cursor: pointer">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/automobile.svg')}}" width="50" alt="">
+                <img src="{{asset('Ressources/img/features-img/automobile.svg')}}" width="50" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">Routier</h3>
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+
+    <div class="col-md-4 col-xs-6 col-xxs-12 pb--30"
+        onclick="location.href='{{ path('safe_colis_voyageur_add', {'mode':'ferroviare'}) }}'" style="cursor: pointer">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/train.svg')}}" alt="">
+                <img src="{{asset('Ressources/img/features-img/train.svg')}}" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">Ferroviare</h3>
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+
+</div>
+
+<!-- Features Section End -->
+{% endblock %}

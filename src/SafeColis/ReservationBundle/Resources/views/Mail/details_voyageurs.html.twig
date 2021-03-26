@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SafeColis - Details Voyage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body style="">
+    
+
+ {% block subject  %}<br>{% endblock %}
+{% block body %}
+       <div style="text-align: center; padding: 13px;  font-size: 13px;">
+        
+                <div style="text-align:left; font-weight: bold; padding-bottom: 13px;">
+                    SafeColis<br><br>
+                </div>
+                <div style="text-align:left" style="margin-bottom: 20px; margin-top:30px;">
+                    <a href="www.safecolis.com" style="text-decoration:none; padding-bottom: 13px; background: #177dff; padding-top: 13px; padding-left: 5px; padding-right: 5px; color: white">
+                        www.safecolis.com
+                    </a>
+                </div>
+                <br><br>
+                <div style="text-align:left; padding-bottom: 13px;">
+                    <span style="font-weight: bold;">{{ 'comptabilitebudle.mail.salutation'|trans({'%nom%': nom }) }} </span>
+                </div>
+        
+                <div style="text-align:left; padding-bottom: 20px;">
+                    
+                    {{ 'messagebundle.details_voyage.paragraphe1'|trans({'%ville_depart%': depart, 
+                                                                    '%ville_arrive%': arrive }) }}:
+
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                    
+                    {{ 'messagebundle.details_voyage.paragraphe2'|trans({'%nom_voyageur%': nom_voyageur, 
+                                                                    '%jour%': date|date('D')|trans,
+                                                                    '%date%': date|date('d'),
+                                                                    '%mois%': date|date('F'),
+                                                                    '%annee%': date|date('Y'),
+                                                                    '%heure%': date|date('H:i') }) }}.
+
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                   
+
+                    <b>{{ 'messagebundle.details_voyage.paragraphe3'|trans({'%prix%': somme_voyageur })}}</b> 
+                </div>
+             
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                {{ 'messagebundle.details_voyage.paragraphe4'|trans }}
+                        
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                {{ 'messagebundle.details_voyage.paragraphe5'|trans({'%nom_voyageur%': nom_voyageur})}}:
+                        <br>
+                        Tél : <a href="tel:{{ numero_Tel }}">{{ numero_Tel }}</a>  
+                        <br>
+                        Email : {{ email_voyageur }}
+                </div>
+               
+                
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                       
+                        {{ 'messagebundle.details_voyage.paragraphe6'|trans }}
+
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                {{ 'messagebundle.details_voyage.follow_1'|trans }}
+                       <a href="{{ app_facebook }}">Facebook</a>, 
+     <a href="{{ app_instagram }}">instagram</a> et {{ 'messagebundle.details_voyage.et'|trans }}
+      <a href="https://twitter.com/safecolis">tweeter</a>. {{ 'messagebundle.details_voyage.follow_2'|trans }} 
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                        {{ 'messagebundle.details_voyage.politesse'|trans }}. 
+                </div>
+
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement"><br>
+                        {{ 'messagebundle.signature'|trans }}                     
+                </div>                
+                <br>
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;">
+                    <a href="www.safecolis.com" style="text-decoration:none; padding-bottom: 13px; background: #177dff; padding-top: 13px; padding-left: 5px; padding-right: 5px; color: white">
+                            www.safecolis.com
+                    </a>
+                </div>
+                <br>
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;">
+                    <span style="font-weight:bold">Contact</span><br><br>
+                    <span>{{ 'messagebundle.client'|trans }} : </span><br>
+                        <a href="tel:+15149969835">+1-514-996-9835 </a> /
+        
+                        <br><br>
+                        <span>{{ 'messagebundle.technique'|trans }}: </span><br>
+                        <a href="tel:+237690072102">+237-690-072-102 </a>
+                
+                </div> 
+        </div>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+safe_colis_abonnement:
+    resource: "@SafeColisAbonnementBundle/Resources/config/routing.yml"
+    prefix:   /
+
+safe_colis_reservation:
+    resource: "@SafeColisReservationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+safe_colis_expedieur:
+    resource: "@SafeColisExpedieurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+safe_colis_home:
+    resource: "@SafeColisHomeBundle/Resources/config/routing.yml"
+    prefix:   /
+
+safe_colis_voyageur:
+    resource: "@SafeColisVoyageurBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

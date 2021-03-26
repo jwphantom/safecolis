@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ==== Document Title ==== -->
+    <title>{% block title %} {{app_name}} {% endblock %}</title>
+    
+   
+	<meta name="description" content="Application d'envoie de colis a travers le monde par l'intermediaire de volontaire">
+	<meta name="author" content="SafeColis">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+    <!-- ==== Favicons ==== -->
+    <link rel="icon" href="{{asset('Ressources/favicon.ico')}}" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+
+
+    <!-- ==== Google Font ==== -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,900%7CLato:300,400i,900%7CRaleway:100,300,300i,400,500,500i,600,700">
+
+    <!-- ==== Font Awesome ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/font-awesome.min.css')}}">
+    
+    <!-- ==== Bootstrap Framework ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/bootstrap.min.css')}}">
+    
+    <!-- ==== jQuery UI Plugin ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/jquery-ui.min.css')}}">
+    
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/owl.carousel.min.css')}}">
+    
+    <!-- ==== Bar Rating Plugin ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/fontawesome-stars-o.min.css')}}">
+    
+    <!-- ==== Main Stylesheet ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/style-dash.css')}}">
+    
+    <!-- ==== Responsive Stylesheet ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/responsive-style.css')}}">
+
+    <!-- ==== Theme Color Stylesheet ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/colors/theme-color-3.css')}}" id="changeColorScheme">
+    
+    <!-- ==== Custom Stylesheet ==== -->
+    <link rel="stylesheet" href="{{asset('Ressources/css/custom.css')}}">
+
+
+
+    {% block stylesheet %}{% endblock %}
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuEIb16b9fXCXMvZmQZ4nd0-WU9zYhHkU&libraries=places&callback=initMap"></script>
+
+    <!-- ==== HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries ==== -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="{{asset('Ressources/assets/js/passwordstrengh.js')}}"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      		<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+    <script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuEIb16b9fXCXMvZmQZ4nd0-WU9zYhHkU&libraries=places&callback=initMap"></script>
+    <script src="https://js.stripe.com/v2/"></script>
+
+
+
+</head>
+
+<body ng-app="">
+
+    <!-- Wrapper Start -->
+    <div class="wrapper" id="app" ng-controller="PasswordController">
+
+   
+    <!-- Header Section Start -->
+    <header class="header--section" style="position: fixed">
+
+    <!-- Header Topbar Start -->
+    <div class="header--topbar">
+                <ul class="nav social float--left hidden-xs logo-navbar-custom">
+                        <img src="{{asset('Ressources/logo-min-2.png')}}" width="150">
+                </ul>
+                <div class="container header_custom">
+                    <!-- Header Topbar Social Start -->
+                    
+                    <!-- Header Topbar Social End -->
+
+                    <!-- Header Topbar Button Start -->
+                    <ul class="nav button float--right">
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        <li><a href="#userMenu" class="" data-toggle="modal"><img src="{{asset('Ressources/img/icon/user2.svg')}}" width="20" alt=""> <span>{{ app.user.username }}</span></a></li>  
+                        {% else %}
+                        <li><a href="#loginForm" class="" data-toggle="modal"><img src="{{asset('Ressources/img/icon/login.svg')}}" width="20" alt=""> <span>Login</span></a></li>
+                        {% endif %}
+                        
+                    </ul>
+                    <!-- Header Topbar Button End -->
+
+                    <!-- Header Topbar Links Start -->
+                    <ul class="nav links float--left">
+                        
+                        
+                        <li>
+                            <a href="{{ path('safe_colis_home_homepage') }}">
+                                <img src="{{asset('Ressources/img/icon/choice.svg')}}" width="20" alt="">
+                                <span>Apps</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('safe_colis_expedieur_recherche_voyage') }}">
+                                <img src="{{asset('Ressources/img/icon/send.svg')}}" width="20" alt="">
+                                <span>Expedier</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('safe_colis_voyageur_choice_transport') }}">
+                                <img src="{{asset('Ressources/img/icon/tourist.svg')}}" width="20" alt="">
+                                <span>Voyager</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ path('safe_colis_voyageur_choice_transport') }}">
+                                <img src="{{asset('Ressources/img/features-img/billet.png')}}" width="20" alt="">
+                                <span>Billet d'avion</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Header Topbar Links End -->
+                </div>
+            </div>
+            <!-- Header Topbar End -->
+        
+       
+      </header>
+      <!-- Header Section End -->
+
+
+        <section class="contact--section pt--70 " data-bg-img="{{asset('Ressources/img/contact-img/bg-contact.png')}}" style="padding-bottom: 100px;">
+            <div class="container">
+                <!-- Section Title Start -->
+                <div class="section--title pb--50 text-center">
+                    <h2 class="h1 text-uppercase">
+                    {% block namepage %}{% endblock %}
+                    </h2>
+                </div>
+                {% block body %}{% endblock %}
+            </div>
+        </section>
+
+       
+        <!-- Footer Section Start -->
+        <footer class="footer--section footer-custom">
+
+
+            <!-- Footer Copyright Start -->
+            <div class="footer--copyright pt--30 pb--30">
+                <div class="container">
+                    <ul class="social nav">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+
+                    <p class="copyright--text">
+                        Copyright  
+                        <script> 
+                            var CurrentYear = new Date().getFullYear() 
+                            document.write(CurrentYear)
+                        </script> 
+                        &copy; <a href="#">{{app_name}}</a>. All Rights Reserved.</p>
+                </div>
+            </div>
+            <!-- Footer Copyright End -->
+        </footer>
+        <!-- Footer Section End -->
+    </div>
+    <!-- Wrapper End -->
+
+    <!-- Login Form Start -->
+    {% include ("loginForm.html.twig") %}
+    <!-- Login Form End -->
+
+    <!-- User Menu Start -->
+    {% include ("userMenu.html.twig") %}
+    <!-- USer Menu End -->
+
+    <!-- Cookie Notification Start -->
+    {# <div id="cookieNotify" class="hidden">
+        <div class="alert bg--c-darkgray--b">
+            <button class="close" data-dismiss="alert">&times;</button>
+            
+            <div class="container">
+                <button data-dismiss="alert" class="btn btn-sm btn-primary float--right">GOT IT!</button>
+                <p>This is a sample cookie notification bar.</p>
+            </div>
+        </div>
+    </div> #}
+    <!-- Cookie Notification End -->
+
+    <!-- Back To Top Button Start -->
+    
+    <div id="backToTop">
+        <a href="#" class="btn btn-lg btn-default active"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <!-- Back To Top Button End -->
+
+    <script>
+        function initialize() {
+        var input = document.getElementById('searchTextField');
+            new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+    <script>
+        function initialize() {
+        var input = document.getElementById('searchTextField2');
+            new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+     <script>
+        function initialize() {
+        var input = document.getElementById('searchTextField3');
+            new google.maps.places.Autocomplete(input);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+      <script src="{{asset('Ressources/assets/ckeditor/ckeditor.js')}}"></script>
+
+  
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( err => {
+                console.error( err.stack );
+            } );
+    </script>
+
+    <script language="javascript">
+
+Stripe.setPublishableKey('pk_test_9HkzE8XNJGgzA0otau2sj1Sj');
+
+// Create a Stripe client.
+var $form = $('#payment_form');
+
+
+$form.submit(function (e) {
+
+    e.preventDefault();
+
+    $form.find('.button').attr('disable', true);
+
+
+    var number =  $('#cardnumber').val();
+
+    var number_decomposer = number.split(' ');
+
+    
+
+    var exp_date = $('#expirationdate').val();
+
+    var exp_date_decomposer = exp_date.split('/');
+
+
+    Stripe.card.createToken({
+    number: number_decomposer[0]+number_decomposer[1]+number_decomposer[2]+number_decomposer[3],
+    cvc: $('#securitycode').val(),
+    exp_month: exp_date_decomposer[0],
+    exp_year: exp_date_decomposer[1],
+    }, function(status,response){
+        
+        
+        if(response.error)
+        {
+            $form.find('#FlashMessageDanger').remove();
+            $form.prepend('<div id="FlashMessageDanger"> '+ response.error.message +'</div>')
+        }
+        else{
+            var token = response.id
+            $form.append($('<input type="hidden" name="stripeToken">').val(token));
+            $form.get(0).submit()
+
+        }
+    });
+
+    
+
+
+
+});
+
+</script>
+
+    <!-- ==== jQuery Library ==== -->
+    <script src="{{asset('Ressources/js/jquery-3.2.1.min.js')}}"></script>
+
+    <!-- ==== jQuery UI ==== -->
+    <script src="{{asset('Ressources/js/jquery-ui.min.js')}}"></script>
+
+    <!-- ==== jQuery UI Touch Punch ==== -->
+    <script src="{{asset('Ressources/js/jquery.ui.touch-punch.min.js')}}"></script>
+
+    <!-- ==== Bootstrap Framework ==== -->
+    <script src="{{asset('Ressources/js/bootstrap.min.js')}}"></script>
+
+    <!-- ==== StickyJS Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.sticky.min.js')}}"></script>
+
+    <!-- ==== Owl Carousel Plugin ==== -->
+    <script src="{{asset('Ressources/js/owl.carousel.min.js')}}"></script>
+
+    <!-- ==== Waypoints Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.waypoints.min.js')}}"></script>
+
+    <!-- ==== Counter-Up Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.counterup.min.js')}}"></script>
+
+    <!-- ==== Counter Down Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.countdown.min.js')}}"></script>
+
+    <!-- ==== Validation Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.validate.min.js')}}"></script>
+
+    <!-- ==== Isotope Plugin ==== -->
+    <script src="{{asset('Ressources/js/isotope.min.js')}}"></script>
+
+    <!-- ==== Zoom Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.zoom.min.js')}}"></script>
+
+    <!-- ==== Bar Rating Plugin ==== -->
+    <script src="{{asset('Ressources/js/jquery.barrating.min.js')}}"></script>
+
+    <!-- ==== Scroll Reveal Plugin ==== -->
+    <script src="{{asset('Ressources/js/scrollreveal.min.js')}}"></script>
+
+    <!-- ==== RetinaJS Plugin ==== -->
+    <script src="{{asset('Ressources/js/retina.min.js')}}"></script>
+
+
+    <!-- ==== Main JavaScript ==== -->
+    <script src="{{asset('Ressources/js/main.js')}}"></script>
+
+    <script src="{{asset('Ressources/js/custom.js')}}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/imask/3.4.0/imask.min.js'></script>
+    </script><script  src="{{asset('Ressources/card/script.js')}}"></script>
+
+
+</body>
+</html>

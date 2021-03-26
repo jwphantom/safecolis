@@ -1,0 +1,48 @@
+{% extends "base-dash.html.twig" %}
+
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/box.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+
+
+{% block body %}
+
+<!-- Features Section Start -->
+<div class="container">
+    <div class="row " data-scroll-reveal="group">
+        <div class="col-md-6 col-xs-6 col-xxs-12 pb--30" style="cursor: pointer"
+            onclick="location.href='{{ path('safe_colis_mes_reservation') }}'">
+            <!-- Feature Item Start -->
+            <div class="feature--item style--1 text-center">
+                <div class="img">
+                    <img src="{{asset('Ressources/img/icon/cart.svg')}}" width="50" alt="">
+                    <img src="{{asset('Ressources/img/icon/cart.svg')}}" width="50" alt="">
+                </div>
+
+                <div class="title">
+                    <h3 class="h4">Mes Reservations</h3>
+                </div>
+            </div>
+            <!-- Feature Item End -->
+        </div>
+
+        <div class="col-md-6 col-xs-6 col-xxs-12 pb--30"
+            onclick="location.href='{{ path('safe_colis_mes_demandes') }}'" style="cursor: pointer">
+            <!-- Feature Item Start -->
+            <div class="feature--item style--1 text-center">
+                <div class="img">
+                    <img src="{{asset('Ressources/img/icon/online-shopping.svg')}}" width="50" alt="">
+                    <img src="{{asset('Ressources/img/icon/online-shopping.svg')}}" width="50" alt="">
+                </div>
+
+                <div class="title">
+                    <h3 class="h4">Mes Demandes</h3>
+                </div>
+            </div>
+            <!-- Feature Item End -->
+        </div>
+    </div>
+</div>
+<!-- Features Section End -->
+{% endblock %}

@@ -1,0 +1,33 @@
+<!-- Login Form Start -->
+<div id="parametre" class="login--form modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal-body">
+                <div class="title">
+                    <h2 class="h4">Menu</h2>
+                </div>
+                {% if abonnement.active == 0 %}
+                <button class="btn btn-block btn-default" id="buttonViewPlan"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    Choisir un abonnement</button>
+                
+                {% else %}
+                    
+                    <button class="btn btn-block btn-default" id="buttonViewPlan"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    Changer mon plan</button>
+
+                    {% if abonnement.renouvellement == 1 %}
+
+                     <button class="btn btn-block btn-default" id="endplan"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                      Resilier mon abonnement</button>
+                    {% endif %}
+                   
+                {% endif %}
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Form End -->

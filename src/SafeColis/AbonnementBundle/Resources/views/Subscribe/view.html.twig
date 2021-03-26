@@ -1,0 +1,123 @@
+{% extends "base-dash.html.twig" %}
+{% block title %}
+{{ parent() }}
+-
+{{ namepage }}
+{% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/subscription.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+{% block body %}
+
+{% if abonnement.active == 0 %}
+<div class="container" id="FlashMessageDanger">
+    Aucun abonnement
+</div>
+{% endif %}
+{% for message in app.flashes('paiement-abonnenement-success')%}
+<div class="container" id="FlashMessageSuccess">
+    Paiement effectué
+</div>
+{% endfor %}
+{% for message in app.flashes('not_found_subscription')%}
+<div class="container" id="buttonWarning">
+ Vous n'êtes pas encore abonné.
+</div>
+{% endfor %}
+<div class="flashMessage">
+</div>
+<!-- Features Section Start -->
+
+<div class="container statutAbonnement">
+        <div class="block">
+
+            <div class="divtop">
+                <div class="divTopBlockLeft"><i class="fa fa-user" aria-hidden="true"></i> {{ namepage }}</div>
+                <div class="divTopBlockRight"><a class="buttonblue" data-toggle="modal" data-target="#parametre"><i
+                            class="fa fa-cog" aria-hidden="true"></i> Paramètres</a></div>
+            </div>
+
+            <div class="contenu">
+
+                <p><strong class="col-sm-2 col-xs-4">Statut : </strong>
+                    {% if abonnement.active == 0 %}
+                    Non Actif
+                    <img src="{{ asset('Ressources/img/icon/error.svg')}}" width="15">
+                    {% else %}
+                    Actif
+                    <img src="{{ asset('Ressources/img/icon/checked.svg')}}" width="15">
+                    {% endif %}
+                    <hr>
+                </p>
+                <p><strong class="col-sm-2 col-xs-4">Plan : </strong>
+                    {% if abonnement.active == 0 %}
+                    Aucun
+                    {% else %}
+                    {{ abonnement.plan }}
+                    {% endif %}
+                    <hr>
+                </p>
+                <p><strong class="col-sm-2 col-xs-4">Début : </strong>
+                    {% if abonnement.active == 0 %}
+                    Aucun
+                    {% else %}
+                    {{ abonnement.datedebut|date('l,d F Y') }}
+                    {% endif %}
+                    <hr>
+                </p>
+                <p><strong class="col-sm-2 col-xs-4">Fin : </strong>
+                    {% if abonnement.active == 0 %}
+                    Aucun
+                    {% else %}
+                    {{ abonnement.datefin|date('l,d F Y') }}
+                    {% endif %}
+                    <hr>
+                </p>
+                 <p><strong class="col-sm-2 col-xs-4">Renouvellement : </strong>
+                    {% if abonnement.renouvellement == 0 %}
+                    Non
+                    {% else %}
+                    Oui
+                    {% endif %}
+
+                </p>
+            </div>
+
+        </div>
+
+
+</div>
+
+
+{% include ('SafeColisAbonnementBundle:Modal:parametre.html.twig') %}
+
+{% if abonnement.active == 0 %}
+{% include ('SafeColisAbonnementBundle:Plan:plan.html.twig') %}
+{% else %}
+{% include ('SafeColisAbonnementBundle:Plan:change_plan.html.twig') %}
+{% endif %}
+
+
+<script>
+$('#endplan').click( function(){
+
+    var plan = "{{ abonnement.plan }}"
+    $.ajax({
+            url:'/subscription/end',
+            type: "POST",
+            dataType: "json",
+            data: {
+                "plan": plan
+            },
+            async: true,
+            success: function (data)
+            {
+                $('.flashMessage').before('<div class="container" id="FlashMessageSuccess"> '+ data.message +'</div>');
+
+            }
+        })
+    });
+</script>
+
+
+{% endblock %}

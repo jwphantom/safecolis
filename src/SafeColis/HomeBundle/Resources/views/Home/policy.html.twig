@@ -1,0 +1,91 @@
+{% extends "base-dash.html.twig" %}
+
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/privacy-policy.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+
+
+{% block body %}
+{% for message in app.flashes('policy_emplty')%}
+<div class="col-12" id="FlashMessageDanger">
+    Politique de confidentialité vide.
+</div>
+</div>
+{% endfor %}
+{% for message in app.flashes('policy_edit')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Politique de confidentialité crée avec success.</div>
+</div>
+{% endfor %}
+
+
+
+
+<!-- Features Section Start -->
+<div class="container">
+
+    <form method="POST" action="{{ path('safe_colis_home_politique')}}">
+        <div class="row">
+            <div class="col-md-12 col-xs-6 col-xxs-12 pb--30">
+                <!-- Feature Item Start -->
+                <div class="profile style--1 text-center">
+                    <div class="title">
+                        <h3 class="h4 viewusername">
+                            <i class="fa fa-book" aria-hidden="true"></i> {{ namepage }}.
+                            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                            {% if is_granted("ROLE_ADMIN") %}
+                            &nbsp; <a id="editPolicy"><i class="fa fa-edit"></i></a>
+                            {% endif %}
+                            {% endif %}
+                        </h3>
+                    </div>
+
+                    <div class="desc" style="text-align: left">
+
+                        <p class="viewPolicy">
+                            {% if policy == ' '  %}
+
+                            {% else %}
+                            Modifié le <strong>{{ policy.dateedit}}</strong>
+                            {{ policy.content|raw }}
+                            {% endif %}
+                        </p>
+                        {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                        {% if is_granted("ROLE_ADMIN") %}
+                        <div class="form-group" id="policy" style="display:none">
+                            {# Génération du label. #}
+                            <input type="hidden" id="date" name="date_edit" value="{{ 'now'|date }} ">
+
+                            <textarea name="content" id="editor" class="editor">
+                       {% if policy == ' '  %}
+                                
+                        {% else %}
+                            {{ policy.content}}
+                       {% endif %}                       
+                       </textarea>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6">
+                                    <button type="submit" class="btn btn-md btn-block btn-default ">Valider<i
+                                            class="ml--8 fa fa-long-arrow-right"></i></button>
+                                </div>
+                                <div class="col-sm-6 col-xs-6" id="AnnulerPolicy">
+                                    <a class="btn btn-md btn-block btn-default active">Annuler <i class="fa fa-times"
+                                            aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                        {% endif %}
+
+
+                    </div>
+                    <!-- Feature Item End -->
+                </div>
+            </div>
+    </form>
+</div>
+<!-- Features Section End -->
+{% endblock %}

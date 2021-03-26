@@ -1,0 +1,520 @@
+January : January
+Febuary : February
+March : March
+April: April
+May : May
+June: June
+July: July
+August: August
+September: September
+October: October
+November : November
+December: December
+
+Jan : January
+Feb : February
+Mar : March
+Apr: April
+Jun: June
+Jul: July
+Aug: August
+Sep: September
+Oct: October
+Nov : November
+Dec: Décember
+
+Mon : Monday
+Tue: Tuesday
+Wed: Wednesday
+Thu : Thursday
+Fri: Friday
+Sat : Satursday
+Sun : Sunday
+
+
+envoyeur: Sender
+voyageur: Traveler
+transporter: Carrier
+reserver: Book
+composants: Components
+abonnement: subscription
+Aide: Help
+apropos: About
+conditions_utilisation: Terms of use
+droit_reservé: All rights reserved 
+voir_profile: See Profile
+modifier : Edit
+
+securite:
+  title: Security
+  description: |
+        For your safety, identities, airline tickets and driving licenses of 
+        each traveler are checked before being posted on our platform for guarantee 
+        traceability. And also a traveler rating system is planned to increase their reliability.
+
+benefice: 
+  title: profit
+  description: |
+        your travel announcements and fill in the number of kilos you have in our platform, 
+        and member users will be able to make a reservation of your pounds through our platform.
+rapidite:
+  title: Speed
+  description: |
+        Choose the date that suits you best on the wide range available and take 
+        quickly contact the traveler who will deliver your package.
+
+
+follow:
+  us: Follow us
+
+corebundle:
+  mes_reservations: My reservations
+  reglement_facture: Bill payment
+  notes: My evaluations
+  deconnexion: Disconnect
+  connexion: Log in
+  mes_voyages: My trips
+  demande_reservation: Reservations requests
+  button:
+    home : Home
+  slider:
+    title1: Make money by making room in your luggage
+    title2: Easily route your parcels around the world 
+    title3: Have your package delivered to your destination at the price of nothing
+    title4: Evaluate who ships your packages to your destination
+
+    texte1: Make your travel announcements and the number of kilograms you have in our platform to earn money that will amortize your travel costs.
+    texte2: SafeColis connects people who want to ship their packages (luggage, e-mail, bags, packages, etc ...) to specific places in the world with the people who will do this service for nothing.
+    texte3: SafeColis allows you to save on sending your parcels by giving the possibility to make the choice on the non-exhaustive list of planned departures. It is this flexibility in choosing the person who will ship your package to destination, which makes SafeColis a fast and very economical solution.
+    texte4: Those who send their parcels can evaluate those who ship them once the parcel has reached its destination safely. Your comments, your evaluations are important to us, and help us to improve constantly, to guarantee you a quality and up-to-date service.
+  aide: Help
+  contact: Contact
+  faq: F.A.Q
+  terms_conditions: SafeColis Terms of Use
+  info_apps: Infos Apps
+  about:  About
+  about_paragraphe1: | 
+                    is a company that does in the inter-city parcel delivery but 
+                    also in international parcel delivery. We put in relation 
+                    travelers who are members of our service who have free mass (Kg) in  
+                    wishing to ship their parcel to destinations similar to those 
+                    travelers. This allows package senders to save money when 
+                    of their sending parcels (the prices defy any concurence), and there are several possible choices. Similarly, 
+                    travelers earn money by selling their free mass (Kg), thus cushioning their transportation costs.
+  about_paragraphe2: | 
+                    We are a young, dynamic team whose dream is to build the most 
+                    big platform for sending parcels around the world
+  about_members_of_teams : Members of the team
+  ceo: CEO
+  cto: CTO
+  contact_paragrpahe1: |
+                    In case of need, we are open seven days on seven, from 9h to 21h. Outside our opening hours, 
+                    you can leave a message on our voicemail phone or leave us a message to address
+  contact_phone : Phone
+  contact_client : Costumer
+  contact_technique: Technical
+  social: Social
+  contact_send_message: Leave us a message if needed
+  contact_titre: Title
+  contact_placeholder_titre: Worry with my inscription ....
+  contact_description: Description
+  contact_placeholder_description: description
+  contact_envoyer: To send
+  notification: Notification
+  profile : Profile
+  les_voyages: Travel
+  comment_ca_marche: How it works?
+  signification_des_icones: Meaning of Icons
+  reservations: Booking
+  confirmation_de_l_administration: Confirmation of administration
+  evenemet_confirme: Event confirmed
+  transaction_monetaire:  Monetary transaction
+  code_couleur: Color code
+  evenement_success: Event in Success
+  evenement_echec: Event Failure
+  evenement_attente:  Event Failure
+  evenement_statique: Static event
+  photo_profile:  Profile Photo
+  mofifier_photo_profil: To edit your profile picture
+  page_profile: Profile page 
+  changer_sa_photo: Change your photo
+  selectionner_une_photo: Select a photo
+  valider: Validate
+  infos_personnelles: Personal informations
+  modifier_ses_infos: To modify his information
+  trois_point_apres_numero : Three points after your number
+  modifier_son_compte: Edit my account
+  remplir_les_chanps:  Please complete the following
+  mot_de_passe: Password 
+  changer_son_mot_de_passe: change your password
+  recherche_voyage:  Search for a trip
+  pour_rechercher_un_voyage: To search for a trip
+  listes_voyages: List of trips 
+  entrer_une_ville_depart: Enter a departure city
+  entrer_une_ville_arrive: Enter an arrival city
+  entrer_une_date: Enter a date (optional)
+  cliquer_sur: Click on
+  
+
+
+form:
+  valider: Validate
+
+transporteurbundle:
+  liste_voyage: Travel lists
+  ville_depart: Departure city
+  placeholder_ville_depart: Enter a departure city
+  ville_arrive: Arrival city
+  placeholder_ville_arrive: Enter an arrival city
+  date_depart: Departure date (optional)
+  heure_depart: Departure time
+  jour_depart: Day of departure
+  kilo_disponible: Mass available
+  prix_par_kilo: Price per kg
+  identification: Passport / Identity Card
+  justification: Air ticket / Driving license
+  chercher: Search
+  prix: Price
+  disponible: Available
+  vendu: Sold
+  voyage_complet: Full trip
+  form:
+    ajouter: Add a trip
+  recherche-transporteur-champ-vide: Incomplete fields.
+  recherche-transporteur-vide: Search not found.
+  completer_son_profil: Please enter your name and surname to add a trip
+  ajout-transporteur: Examination of the announcement by the Direction.
+  mes_posts: My posts
+  posts_en_attente: Posts being confirmed
+  nombre_voyage: Travel number(s)
+  mes_voyages: My trips
+  voyage_depasse: Trip(s) passed
+  voyage_acheve: Completed trip(s)
+  examination_direction: Management Examination
+  details: Details
+  lieu: Place
+  reserver : Booking
+  mail: 
+    note:
+      inscription: Inscription
+      bonjour: Hello
+      paragraphe1: |
+                We would like to take your comments about the delivery 
+                of your parcel which was made from
+      vers: Towards
+      a: to
+      faire_l_evaluation_maintenant: Do the evaluation now 
+      le: The
+      paragraphe2_1 : If you have any questions, do not hesitate to contact us at 
+      paragraphe2_2:  from 9h to 21h every day of the week
+      paragraphe3 : |
+                Once he clicks on the link contained in his email, it will be redirected 
+                to the login page to return its login information. Then, once he will have 
+                validate its login information, it will be redirected automatically 
+                to the evaluation page.
+
+notificationbunde:
+  nombre_de_notification:
+    singulier: You have %notifications% new notification
+    pluriel: You have %notifications% new notifications
+  marquer_comme_lu: Mark all as read
+  voir_tout: See all notifications
+  notification: Notifications
+  toutes_notifications: All notifications
+  nouvelle_demande: New reservation request
+  reservation_annule: Reservation request canceled
+
+
+comptabilitebudle:
+  comptabilite: Accounting
+  mes_factures: My bills
+  reservation: Reservations
+  a_regler: Reservations to pay
+  facture: Bill
+  date: Date
+  depart: Departure
+  arrive: Arrival
+  kilo_demande: Mass asked
+  total_a_payer: Total to pay 
+  motif: Pattern
+  reglement_facture: Payment of the invoice
+  mail:
+    salutation: Hello %nom%
+    details_envoyeur:
+      paragraphe1: | 
+                Following your confirmation regarding the booking request made by the member %nom_envoyeur% 
+                on your trip from %depart% to %arrive%, %date% to %heure%, we inform you that the reservation 
+                has just been finalized.
+      paragraphe2: |
+                Member %nom_envoyeur% has booked %kilo_achete%. As a result, it will give you a total amount 
+                of %somme_voyageur% $CAD for the service you will render it.
+      paragraphe3: |
+                Member %nom_envoyeur% gives you his email as well as his phone contact so you can get in touch 
+                with him or she
+    politesse:  Thank you for trusting safecolis.
+    follow: Follow us on our social networks
+  client: Customer
+  technique: Technical
+  cordialement: cordially
+  signature: The SafeColis Team
+
+
+
+messagebundle:
+  message: Message
+  messages: Messages
+  conversations: Conversations
+  mes_messages: My messages
+  non_lu:
+    mixte: Unread(s)
+    singulier: Unread
+  lu:
+    mixte: Read
+    singulier:  Read
+  details: Details
+  salutation: Hello %nom% %prenom%
+  info_voyageur:
+    paragraphe1: |
+            Following your confirmation regarding the booking request made by the member %nom_envoyeur% on your trip from %villedepart% 
+            to %villearrive% the %jour% %date% %mois% %annee% to %heure%, we inform you that the reservation has just been finalized.
+    paragraphe2: |
+            Member %nom_envoyeur% has reserved %kilovoulu% Kg. As a result, it will give you a total amount of %prix% $CAD for the 
+            service you will render it.
+    paragraphe3: |
+            Member %nom_envoyeur% gives you his email as well as his phone contact so you can get in touch with him or she
+    paragraphe4: Thank you for trusting safecolis.
+    paragraphe5: Follow us on our social networks
+    client : customer
+    technique: Technical
+    cordialement: Cordially
+  details_facture_reservation:
+    reservation: Booking
+    paragraphe1: |
+              Congratulations! Your transaction has been completed successfully. here are the details of your transaction
+    n_ref: Reference number
+    code_reponse: Response code
+    date_transaction: Date of the transaction
+    code_iso: ISO code
+    heure_transaction: Time of the transaction
+    n_autorisation:  Authorization number
+    prix_reservation: Price of the booking
+    sous_total: Subtotal
+    total: Total
+    date_depart: Date of departure
+    heure_depart: Hour of departure
+    technique: Technical
+    cordialement: Cordially
+    a_prevoir: to predict for the traveler
+  details_voyage:
+    paragraphe1: |
+              Thank you for booking your package from %ville_depart% to %ville_arrive% Thanks to the contacting made by safecolis 
+              with a traveler who will deliver your package to destination. Here is the information about your reservation
+    paragraphe2: |
+              The delivery of your parcel is offered by %nom_voyageur%, member of the service offered by safecolis, 
+              and will take place on %jour% %date% %mois% %annee% at %heure%
+    paragraphe3: |
+              Thank you for planning an amount of %prix% $CAD in cash (exact currency please) if you physically meet the traveler 
+              or by a payment agreement (bank transfer or transfer interac).   
+    paragraphe4: |
+              We advise you to meet the traveler physically  as far as possible in order to better know who will transport your package. 
+              Upon receipt of this email, we advise you to quickly contact 
+              the traveler who has been assigned to you and so you now own contact information in order to hear you on the procedure to 
+              follow for that your parcel arrives at a good destination and in a safe way. The way the package will reach the traveler 
+              will be left to your care, you will discuss the best way and you will compromise.
+    paragraphe5: |
+              The traveler %nom_voyageur%, gives you access to his email as well as his phone number
+    paragraphe6: |
+              We are open seven days a week from 9am to 9pm. Outside our opening hours, you can leave a message on our voicemail 
+              box or still leave us a message at service@safecolis.com.
+    et: and
+    follow_1: Join us on our social networks
+    follow_2: to know more about our services and to know how we operate and especially our future projects
+    politesse: Thank you for choosing safecolis for the delivery of your parcels around the world
+  livraison_effectué:
+    paragraphe1: |
+              We would like to take your comments on the delivery of your parcel was made from %villedpart%
+               to %villearrive% the %jour% %date% %mois% %annee% to %heure%
+    paragraphe2: |
+              (Do the evaluation now (%villedpart% to %villearrive% the %jour% %date% % mois% %annee%)
+    paragraphe3: |
+              If you have any questions, do not hesitate to contact us at <a href="tel:+15149969835"> + 1-514-996-9835 </a>,
+               9am to 9pm all the days of the week.
+    paragraphe4: |
+              This link is only for single use
+  premiere_connexion:
+    sous_titre: How SafeColis works
+    mode_voyageur:
+      titre: In Traveler mode
+      paragraphe1: |
+              Create your ad, register and submit your ad with all the necessary information. 
+              Once we have checked your ad, it will be posted if we judge that it does not presents
+              no anomaly. Otherwise it will be rejected.
+      paragraphe2: |
+              Receive notifications, once we SafeColis have published your ad, you will receive a
+              notification. Even in case your ad will not have been published, you will also receive a notification.
+      paragraphe3: |
+              Receive booking requests once your ad published in the SafeColis platform, many users wishing to send 
+              their package via your ad you will make their reservation requests.
+      paragraphe4: |
+                Accept or reject a reservation request, it is left to your own decision to accept a reservation request or not. 
+                If you decline a reservation request, the process stops 
+                the. But if you accept a reservation request, you will receive 
+                after a certain amount of time (this time will depend on the speed 
+                with which the parcel sender will pay his bill to 
+                SafeColis) information about who made the booking on your ad.
+      paragraphe5: |
+              Meet, meet the members who booked the pounds 
+              of your trip through their contacts that you received by email 
+              or by message in the safecolis.com platform
+    mode_envoyeur:
+      titre: In send mode
+      paragraphe1: |
+              Check out the travel announcements, register first, 
+              then check the travel ads posted by the trips 
+              members of our platform.
+      paragraphe2: |
+              Enter your selection criteria, fill in the fields city of 
+              departure, city of arrival and departure date to filter 
+              only the relevant trips for you.
+      paragraphe3: | 
+              Make a reservation on a trip, select the trip that 
+              best meets your expectations, enter information about 
+              your parcel (description of the parcel, number of wanted kilograms), then 
+              finish your booking request.
+      paragraphe4: |
+              Settle the bill, once the traveler has accepted your 
+              reservation request, you will have to pay the sum of 5 
+              $ CAD (representing the cost of connecting with the traveler 
+               performed by SafeColis).
+      paragraphe5: |
+              Meet, once you've paid your bill to SafeColis, 
+              you will receive information about the 
+              trip and it will leave as you like the way you 
+              encounter. But predict how much you should pay 
+              traveler for the delivery of your package to its destination.
+
+  contact: Contact 
+  client: Costumer
+  technique: Technical   
+  signature: The SafeColis Team
+
+envoyeurbundle:
+  mes_reservations: Mes reservations
+  reservation: Booking
+  reservations: Reservations
+  depart: Departure
+  arrive: Arrival
+  kilo_voulu: Kg wanted
+  motif: Pattern
+  statut: Status 
+  regler_la_facture: Pay the bill
+  supprimer: Delete
+  facture_paye: Paid invoice
+  payer: Pay
+  voyage_depasse: Travel exceeded
+  faire_une_reservation: Make a booking
+  description: Description
+  mes_demandes: My requests
+  demandes_reservations: Reservations requests
+  total_a_payer: total to pay
+  en_attente: Waiting
+  accepter: Accept
+  accepte: Accepted
+  refuser: Refuse
+
+
+  
+
+#message bundle infos voyageur
+Infos de l'envoyeur: Sender informations
+
+
+
+
+
+change_langue: Change language
+francais: Francais
+english: English
+deutsch : Deutsch
+espagnol : espanol
+
+userbundle:
+  profile: Profile
+  numero_non_verifie: phone Number Not Checked
+  residence: Town of residence
+  description: Description
+  mes_notes: My evaluations
+
+
+  connexion : Connexion
+  remember: Remember me
+  valider: Validate
+  forgot_password: I forgot my password
+  subscribe:  I want to register
+  accueill: Home
+  inscription: Inscription
+  nom: Name
+  prenom: First name
+  password: Password
+  conditions_mot_de_passe: Use at least 1 capital letter, 1 lowercase letter and 1 digit
+  terms_conditions: Accept the terms of use
+  deja_un_compte: I already have an account
+  change_password: Change your password
+  repeat_password: Repeat password
+  requestpassword_indication: A password reset link has been sent to
+  message_account_create: check your emails to finalize your registration
+  phone: Phone
+  ville_residence: Town of residence
+  old_password : Old Password
+  mail:
+    confirmation_inscription:
+      inscription: Inscription
+      salutation: Hello %email%
+      paragraphe1: To validate your user account, please go to
+      lien: Confirmation link
+      unique_lien:   This Link is only usable once
+    reinitialisation_mdp:
+      reinitialisation: Reset Password
+      salutation: Hello %email%
+      paragraphe1:  You are about to change your password, If you did not do this, do not do anything
+      lien: Reset link
+      unique_lien: This Link is only usable once
+    cordialement: cordially
+    signature: The SafeColis Team
+
+
+messageflash:
+  Lien_de_notation_utilise: This rating link has already been used.
+  voyageur_note: Rating attributed to the traveler ... Thank you !!!
+  aucune_notaton: No travel noted yet.
+  recherche-transporteur-champ-vide: Incomplete fields.
+  recherche-transporteur-vide: Search not found.
+  recherche-transporteur-trouve: 
+  completer_son_profil: Please enter your name and surname to add a trip
+  ajout-transporteur: Examination of the announcement by the Direction.
+  Aucun-message: Your message box is still empty.
+  reservation-reussite: Your reservation request has been sent and is being examined
+  depassement-kilo: You have entered a number of kg higher than the traveler.
+  reservation-authorise: Reservation accepted with success.
+  paiement-reservation-annule: Your payment has not been made
+  solde-insuffisant: Insufficient balance
+  paiement-reservation-annule-time-limit: Payment of the reservation canceled.The operation exceeded the required time of treatment
+  paiement-reservation-effectue: Your payment has been made
+
+  Lien-Reinit-Use: Registration link already used.
+  compte-actif: Registration finished !!! your account is now active.
+  error_login: Incorrect identifier 
+  Utilisateur-Inexistant: Non-existent user.
+  Reinitialisation-Complete: Your password has been changed.
+  user_existant: Phone number already existing
+  email_existant: Email address already existing
+  champs_incomplet: Please fill in all fields
+  Email_non_valide: Invalid email
+  mot_passe_non_valide: Incorrect password Use 1 capital letter, 1 lowercase letter and 1 digit
+  numero_incorrect: You did not enter a correct phone number
+  send_mail_help_champs_vide: Please fill in all the fields
+  send_mail_help_success: Your email has been sent
+  send_mail_help_fail: The sending of the mail has failed
+  mot_passe_different: Non-identical password
+  medium_password: Medium password
+  old_pass_diff : Old password different

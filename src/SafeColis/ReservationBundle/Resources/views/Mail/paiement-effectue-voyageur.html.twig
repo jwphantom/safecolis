@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SafeColis - Inscription</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+
+ {% block subject  %}SafeColis - Nouveau reserveur(euse) <br>{% endblock %}
+{% block body %}
+
+<h3>Bonjour {{ nom }} !!</h3>
+
+Félicitations! Une personne vient de finaliser la reservation pour l'envois d'un colis a travers vous. Nous vous 
+remercions d'avoir posté un voyage sur notre plateforme, et de rendre l'envois des colis plus simple et à prix abordable.
+ <br>
+
+<h3>Information du Reserveur</h3>
+
+Ville de départ : {{ depart }}<br>
+Ville d'arrivé : {{ arrive }}<br>
+Heure : {{ heure|date('l d F Y') }}<br>
+Kilo achété : <b>{{ kilo_achete }}</b>Kg<br>
+Telephone du reserveur : {{ numero_Tel }}<br>
+Email Reserveur : {{ email_reserveur }}<br>
+Somme à percevoir : <b>{{ somme_voyageur }}$</b><br>
+
+
+Nous vous remercie une fois de plus et bon voyage<br><br>
+
+Cordialement<br>
+L'equipe SafeColis
+{% endblock %}
+</body>
+</html>

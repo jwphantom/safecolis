@@ -1,0 +1,546 @@
+January : Janvier
+Febuary : Février
+March : Mars
+April: Avril
+May : Mai
+June: Juin
+July: Juillet
+August: Août
+September: Septembre
+October: Octobre
+November : Novembre
+December: Décembre
+
+Jan : Janvier
+Feb : Février
+Mar : Mars
+Apr: Avril
+Jun: Juin
+Jul: Juillet
+Aug: Août
+Sep: Septembre
+Oct: Octobre
+Nov : Novembre
+Dec: Décembre
+
+Mon : Lundi
+Tue: Mardi
+Wed: Mercredi
+Thu : Jeudi
+Fri: Vendredi
+Sat : Samedi
+Sun : Dimanche
+
+
+envoyeur: Envoyeur
+voyageur: Voyageur
+transporter: transporter
+reserver: Reserver
+composants: Composants
+abonnement: abonnement
+Aide: Aide
+apropos: A propos
+conditions_utilisation: Conditions d'utilisation
+droit_reservé: Tous droits reservés 
+voir_profile: Voir Profil
+modifier : Modifier
+
+securite:
+  title: Securité
+  description: |
+        Pour votre sécurité, les identités, les billets d’avion et les permis de conduire 
+        de chaque voyageur sont vérifiés avant d’être postés sur notre plateforme afin de 
+        garantir une traçabilité
+benefice: 
+  title: Bénéfice
+  description: |
+        Faites vos annonces de voyage et renseignez le nombre de kilos dont vous disposés 
+        dans notre plateforme, et les utilisateurs membres vont contacterons par notre 
+        intermédiaire pour entrer en contact avec les voyageurs
+rapidite:
+  title: Rapidité
+  description: |
+        Choisissez la date qui vous convient le mieux sur la large gamme disponible et prenez 
+        rapidement contact avec le voyageur qui acheminera votre colis.
+
+
+follow:
+  us: Suivez-Nous
+
+corebundle:
+  button:
+    home : Accueil
+  slider:
+    title1: Gagner de l'argent en faisant de la place dans vos bagages
+    title2: Acheminez facilement vos colis dans les 4 coins du monde 
+    title3: Faites acheminer votre colis à destination au prix de rien
+    title4: Évaluez ceux qui expédient vos colis à destination
+
+    texte1: Faites vos annonces de voyage et le nombre de kilogrammes que vous disposez dans notre plateforme, et courrez la chance de gagner de l’argent
+    texte2: SafeColis met en contact les personnes qui désirent expédier leurs colis (bagages, courriel, sacs, paquets, etc…) à un lieu donné du monde avec les personnes qui les aideront leurs colis à atteindre leur destination
+    texte3: SafeColis vous permet d’économiser sur l’envoie de vos colis en donnant la possibilité de faire le choix sur la liste non exhaustive des départs prévus. C’est cette flexibilité dans le choix de la personne qui expédiera votre colis à destination, qui fait de SafeColis, une solution très économique..
+    texte4: Les personnes qui désirent envoyer leurs colis peuvent évaluer ceux qui les expédient une fois que le colis a atteint sa destination en toute sécurité. Vos commentaires et évaluations nous tiennent à cœur, et nous aide à nous améliorer chaque jour, afin de vous garantir un service de qualité
+  mes_reservations: Mes reservations
+  reglement_facture: Règlement de Facture
+  notes: Mes notes
+  deconnexion: Deconnecter
+  connexion: Connexion
+  mes_voyages: Mes voyages
+  demande_reservation: Demandes de Reservations
+  aide: Aide
+  contact: Contact
+  faq: F.A.Q
+  terms_conditions: Conditions d'utilisation de SafeColis
+  info_apps: Infos Apps
+  about:  À propos
+  about_paragraphe1: | 
+                    est une entreprise qui fait dans la livraison interurbaine de colis, mais
+                    aussi dans la livraison de colis à l’international. Nous mettons en relation
+                    les voyageurs membres de notre service qui possèdent des kilos libres dans
+                    leurs bagages avec les envoyeurs, également membres de notre service
+                    désirant expédier leur colis dans des destinations similaires à celles des
+                    voyageurs. Ceci permet aux envoyeurs de colis d’économiser de l’argent lors
+                    de leur envoie de colis (les prix défient toute concurence), et il y a plusieurs choix possibles. De même, les
+                    voyageurs gagnent de l’argent en vendant leurs kilos libres, amortissant ainsi leur frais de transport.
+  about_paragraphe2: | 
+                    Nous sommes une jeune équipe dynamique dont le rêve est de bâtir la plus
+                    grosse plateforme d’envoi de colis dans le monde
+  about_members_of_teams : Membres de l’équipe
+  ceo: CEO
+  cto: CTO
+  contact_paragrpahe1: |
+                    En cas de besoin, nous sommes ouverts sept jours sur
+                    sept, de 9h à 21h. En dehors de nos heures d'ouverture,
+                    vous pouvez laisser un message sur notre boîte vocale
+                    téléphonique ou encore nous laisser un message à
+                    l’adresse
+  contact_phone : Téléphone
+  contact_client : Client
+  contact_technique: Technique
+  social: Social
+  contact_send_message: Laissez-nous un message en cas de besoin
+  contact_titre: Titre
+  contact_placeholder_titre: Soucis avec mon inscription....
+  contact_description: Description
+  contact_placeholder_description: description
+  contact_envoyer: Envoyer
+  notification: Notification
+  profile : Profil
+  les_voyages: Les voyages
+  comment_ca_marche: Comment ça marche?
+  signification_des_icones: Signification des îcones
+  reservations: Réservation
+  confirmation_de_l_administration: Confirmation de l'administration
+  evenemet_confirme: Événement confirmé
+  transaction_monetaire:  Transcation monétaire
+  code_couleur: Code couleur
+  evenement_success: Événement à Succès
+  evenement_echec: Événement Échec
+  evenement_attente:  Événement En Attente
+  evenement_statique: Événement Statique
+  photo_profile:  Photo de profil
+  mofifier_photo_profil: Pour modifier sa photo de profil
+  page_profile: Page profil 
+  changer_sa_photo: Changer sa photo
+  selectionner_une_photo: Sélectionner une photo
+  valider: Valider
+  infos_personnelles: Informations personelles
+  modifier_ses_infos: Pour modifier ses informations
+  trois_point_apres_numero : Trois points après votre numéro
+  modifier_son_compte: Modifier mon compte
+  remplir_les_chanps:  Remplir les champs
+  mot_de_passe: Mot de passe 
+  changer_son_mot_de_passe: changer son mot de passe
+  recherche_voyage:  Recherche d'un voyage
+  pour_rechercher_un_voyage: Pour rechercher un voyage
+  listes_voyages: Liste des voyages 
+  entrer_une_ville_depart:  Entrer une ville de départ
+  entrer_une_ville_arrive: Entrer une ville d'arrivée
+  entrer_une_date: Enter une date(facultative)
+  cliquer_sur: Cliquez sur
+  
+  
+
+
+form:
+  valider: Valider
+  
+
+transporteurbundle:
+  liste_voyage: Listes des voyages
+  ville_depart: Ville de départ
+  placeholder_ville_depart: Entrer une ville de départ
+  ville_arrive: Ville d'arrivée
+  placeholder_ville_arrive: Entrer une ville d'arrivée
+  date_depart: Date de départ (optionnelle)
+  heure_depart: Heure de départ
+  jour_depart: Jour de départ
+  kilo_disponible: Kilo disponible
+  prix_par_kilo: Prix par kilo
+  identification: Passeport/ Carte d'identité
+  justification: Billet d'avion / Permis de conduire
+  chercher: Chercher
+  prix: Prix
+  disponible: disponible
+  vendu: Vendu
+  voyage_complet: Voyage Complet
+  form:
+    ajouter: Ajouter un voyage
+  recherche-transporteur-champ-vide: Champs Incomplet.
+  recherche-transporteur-vide: Recherche introuvable.
+  completer_son_profil: Veuillez Renseigner votre nom et prenom pour pouvoir ajouter un voyage
+  ajout-transporteur: Examination de l'annonce par la Direction.
+  mes_posts: Mes posts
+  posts_en_attente: Posts en cours de confirmation
+  nombre_voyage: Nombre(s) de voyage(s)
+  mes_voyages: Mes voyages
+  voyage_depasse: Voyage(s) dépassé(s)
+  voyage_acheve: Voyage(s) achevé(s)
+  examination_direction: Examination par la Direction
+  details: Details
+  lieu: Lieu
+  reserver : Reserver
+  mail: 
+    note:
+      inscription: Inscription
+      bonjour: Bonjour
+      paragraphe1: |
+                Nous aimerons prendre de vos commentaires au sujet de la livraison 
+                de votre colis qui s’est effectuée de
+      vers: Vers
+      a: à
+      faire_l_evaluation_maintenant: Faire l’évaluation maintenant 
+      le: Le
+      paragraphe2_1 : Pour toute question, n’hésitez pas à communiquer avec nous au numéro 
+      paragraphe2_2:  de 9h à 21h tous les jours de la semaine
+      paragraphe3 : |
+                Une fois qu’il aura cliqué sur le lien contenu dans son mail, 
+                on le redirigera vers la page de connexion pour qu’il rentre 
+                ses informations de connexion. Puis, une fois qu’il aura valider 
+                ses informations de connexion, on le redirigera automatiquement 
+                vers la page de l’évaluation.
+
+
+notificationbunde:
+  nombre_de_notification:
+    singulier: Vous avez %notifications% nouvelle notification
+    pluriel: Vous avez %notifications% nouvelles notifications
+  marquer_comme_lu: Tout Marquer comme lu
+  voir_tout: Voir toutes les notifications
+  notification: Notifications
+  toutes_notifications: Toutes les notifications
+  nouvelle_demande: Nouvelle demande de reservation
+  reservation_annule: Demande de reservation annulée
+
+
+
+comptabilitebudle:
+  comptabilite: Comptabilite
+  mes_factures: Mes factures
+  reservation: Reservations
+  a_regler: Reservations à regler
+  facture: Facture
+  date: Date
+  depart: Départ
+  arrive: Arrivée
+  kilo_demande: kilo demandé
+  total_a_payer: Total à payer 
+  motif: Motif
+  reglement_facture: Règlement de la facture
+  mail:
+    salutation: Bonjour %nom%
+    details_envoyeur:
+      paragraphe1: | 
+                À la suite de votre confirmation relative à la demande de réservation faite
+                par le membre %nom_envoyeur% sur votre voyage allant de %depart% vers %arrive%, le %date% à %heure%, 
+                nous vous informons que la réservation vient d’être finalisée.
+      paragraphe2: |
+                Le membre %nom_envoyeur% a réservé %kilo_achete%. 
+                De ce fait, il vous donnera un montant total de %somme_voyageur%$
+                pour le service que vous le rendrez.
+      paragraphe3: |
+                Le membre %nom_envoyeur% vous donne à son courriel, ainsi qu’a son
+                contact téléphonique afin que vous puissiez entrer en contact avec lui ou
+                elle
+    politesse:  Merci de faire confiance à safecolis.
+    follow: Suivez-nous sur nos réseaux sociaux
+  client: Client
+  technique: Technique
+  cordialement: Cordialement
+  signature: L'equipe SafeColis
+
+
+messagebundle:
+  message: Message
+  messages: Messages
+  conversations: Conversations
+  mes_messages: Mes messages
+  non_lu:
+    mixte: Non Lu(s)
+    singulier: Non Lu
+  lu:
+    mixte: Lu(s)
+    singulier:  Lu
+  details: Details
+  salutation: Bonjour %nom% %prenom%
+  info_voyageur:
+    paragraphe1: |
+            À la suite de votre confirmation relative à la demande de réservation faite
+            par le membre %nom_envoyeur% sur votre voyage allant de %villedepart% vers %villearrive%  
+            le %jour% %date% %mois% %annee% à %heure%, nous vous informons que la réservation 
+            vient d’être finalisée.
+    paragraphe2: |
+            Le membre %nom_envoyeur% a réservé %kilovoulu% Kg. 
+            De ce fait, il vous donnera un montant total de %prix%$CAD
+            pour le service que vous le rendrez.
+    paragraphe3: |
+            Le membre %nom_envoyeur% vous donne à son courriel, ainsi qu’a son
+            contact téléphonique afin que vous puissiez entrer en contact avec lui ou
+            elle
+    paragraphe4: Merci de faire confiance à safecolis.
+    paragraphe5: Suivez-nous sur nos réseaux sociaux
+    client : client
+    technique: Technique
+    cordialement: Cordialement
+  details_facture_reservation:
+    reservation: Réservation
+    paragraphe1: |
+              Félicitations! Votre transaction a été complétée avec succès. Voici les
+              détails de votre transaction
+    n_ref: No de référence
+    code_reponse: Code de réponse
+    date_transaction: Date de la transaction
+    code_iso: Code ISO
+    heure_transaction: Heure de la transaction
+    n_autorisation:  No d'autorisation
+    prix_reservation: Prix de la reservation
+    sous_total: Sous-total
+    total: Total
+    date_depart: Date de départ
+    heure_depart: Heure de départ
+    technique: Technique
+    cordialement: Cordialement
+    a_prevoir: à prévoir pour le voyageur
+  details_voyage:
+    paragraphe1: |
+              Merci d'avoir réservé l’envoi de votre colis qui partira de %ville_depart% 
+              vers %ville_arrive% Grâce à la mise en contact
+              effectuée par safecolis avec un voyageur qui acheminera votre colis à destination. 
+              Voici les informations relatives à votre réservation
+    paragraphe2: |
+              La livraison de votre colis est offerte par %nom_voyageur%, membre du service offert 
+              par safecolis, et aura lieu le %jour% %date% %mois% %annee% à %heure%
+    paragraphe3: |
+              Merci de prévoir un montant de  %prix% $ en argent comptant
+              (monnaie exacte SVP) si vous rencontrez physiquement le voyageur ou 
+              par une entente de paiement (virement bancaire ou virement interac).   
+    paragraphe4: |
+              Nous vous conseillons de rencontrer le voyageur physiquement 
+              dans la mesure du possible afin de mieux connaitre celui qui 
+              transportera votre colis. Dès la réception de ce courriel, 
+              nous vous conseillons de prendre rapidement contact avec le 
+              voyageur qui vous a été attribué et donc vous possédez maintenant 
+              les coordonnées afin de vous entendre sur la procédure à suivre pour 
+              que votre colis arrive à bonne destination et de manière sécuritaire.
+              La façon dont le colis parviendra au voyageur sera laissé à vos soins, 
+              vous discuterez de la meilleure façon et vous ferez un compromis.
+    paragraphe5: |
+              Le voyageur %nom_voyageur%, vous donne accès à son courriel ainsi qu'à 
+              ses coordonnées téléphoniques
+    paragraphe6: |
+              Nous sommes ouvert sept jours sur sept, de 9h à 21h.  
+              En dehors de nos heures d'ouverture, vous pouvez 
+              laisser un message sur notre boîte vocale téléphonique ou 
+              encore nous laissez un message à l’adresse service@safecolis.com.
+    et: et
+    follow_1: Rejoignez-nous sur nos réseaux sociaux
+    follow_2: pour en savoir plus sur nos services et pour savoir comment nous fonctionnons et surtout nos projets futur
+    politesse: Merci de choisir safecolis pour la livraison de vos colis à travers le monde
+  livraison_effectué:
+    paragraphe1: |
+              Nous aimerons prendre de vos commentaires au sujet de la livraison de votre
+              colis qui s’est effectuée de %villedepart% vers %villearrive%
+              le %jour% %date% %mois% %annee% à %heure%
+    paragraphe2: |
+              (Faire l’évaluation maintenant (%villedepart% vers %villearrive%
+              le %jour% %date% %mois% %annee%)
+    paragraphe3: |
+              Pour toute question, n’hésitez pas à communiquer avec nous au numéro             
+              <a href="tel:+15149969835">+1-514-996-9835 </a> , de 9h à 21h tous 
+              les jours de la semaine.
+    paragraphe4: |
+              Ce lien n'est qu'a usage unique
+  premiere_connexion:
+    sous_titre: Mode de fonctionnement de SafeColis
+    mode_voyageur:
+      titre: En mode Voyageur
+      paragraphe1: |
+              Créer votre annonce, inscrivez-vous et soumettez-nous votre annonce
+              avec toutes les informations nécessaires. Une fois que nous avons
+              vérifié votre annonce, elle sera postée si nous jugeons qu’elle ne
+              présente aucune anomalie. Sinon elle sera rejetée.
+      paragraphe2: |
+              Recevez des notifications, une fois que nous   SafeColis  avons publié 
+              votre annonce, vous recevrez une notification. Même dans le cas ou votre annonce 
+              n’aura pas été publiée, vous recevrez également une notification.
+      paragraphe3: |
+              Recevez des demandes de réservations , une fois votre annonce
+              publiée dans la plateforme  SafeColis , de nombreux
+              utilisateurs désirant envoyer leur colis via votre annonce vous
+              feront leurs demandes de réservation.
+      paragraphe4: |
+              Acceptez ou refuser une demande de réservation, il est laissé à
+              votre propre décision d’accepter une demande de réservation ou pas.
+              Si vous refuser une demande de réservation, le processus s’arrête
+              là. Mais si vous acceptez une demande de réservation, vous recevrez
+              après un certain nombre de temps (ce temps dépendra de la rapidité
+              avec laquelle l’envoyeur de colis réglera sa facture à 
+               SafeColis ) des informations sur celui qui a fait
+              la réservation sur votre annonce.
+      paragraphe5: |
+              Rencontrez-vous, rencontrez les membres qui ont réservé les kilos
+              de votre voyage grâce à leurs contacts que vous avez reçu par mail
+              ou par message dans la plateforme safecolis.com
+    mode_envoyeur:
+      titre: En mode Envoyeur
+      paragraphe1: |
+              Consultez les annonces de voyage, inscrivez-vous premièrement,
+              puis consultez les annonces de voyages postés par les voyages
+              membres de notre plateforme.
+      paragraphe2: |
+              Entrez vos critères de sélection, renseignez les champs ville de
+              départ, ville d’arrivée et date de départ afin de filtrer
+              uniquement les voyages pertinents pour vous.
+      paragraphe3: | 
+              Faites une réservation sur un voyage, sélectionnez le voyage qui
+              correspond le plus à vos attentes, entrez les informations sur
+              votre colis (description du colis, nombre de kilos voulus), puis
+              terminer votre demande de réservation.
+      paragraphe4: |
+              Régler la facture, une fois que le voyageur aura acceptez votre
+              demande de réservation, vous devrez vous acquitter de la somme de 5
+              $CAD (représentant les frais de mis en relation avec le voyageur
+              effectué par  SafeColis ).
+      paragraphe5: |
+              Rencontrez-vous, une fois que vous aurez réglé votre facture a  SafeColis , 
+              vous recevrez les informations sur le
+              voyage et ce sera laisser à votre guise la façon dont vous
+              rencontrerez. Mais prévoir le montant que vous devriez payer au
+              voyageur pour l'acheminement de votre colis à sa destination.
+
+  contact: Contact 
+  client: Client
+  technique: Technique    
+  signature: L'equipe SafeColis
+
+envoyeurbundle:
+  mes_reservations: Mes reservations
+  reservation: Reservation
+  reservations: Reservations
+  depart: Départ
+  arrive: Arrivé
+  kilo_voulu: Kilo voulus
+  motif: Motif
+  statut: Statut 
+  regler_la_facture: Regler la Facture
+  supprimer: Supprimer
+  facture_paye: Facture payé
+  payer: Payer
+  voyage_depasse: Voyage depassé
+  faire_une_reservation: Faire une reservation
+  description: Description
+  mes_demandes: Mes demandes
+  demandes_reservations: Demandes de Reservations
+  total_a_payer: otal à payer
+  en_attente: En attente
+  accepter: Accepter
+  accepte: Accepté
+  refuser: Refuser
+  
+
+#message bundle infos voyageur
+Infos de l'envoyeur: Infos de l'envoyeur
+
+change_langue: Changer de langue
+francais: Francais
+english: English
+deutsch : Deutsch
+espagnol : espanol
+
+userbundle:
+  profile: Profil
+  numero_non_verifie: Numéro de Téléphone Non Vérifié
+  residence: Ville de Résidence
+  description: Description
+  mes_notes: Mes notes
+  connexion : Connexion
+  remember: Se souvenir de moi
+  valider: Valider
+  forgot_password: J’ai oublié mon mot de passe
+  subscribe:  Je veux m’inscrire
+  accueill: Accueil
+  inscription: Inscription
+  nom: Nom
+  prenom: Prénom
+  password: Mot de passe
+  conditions_mot_de_passe: Utiliser au moins 1 lettre majuscule, 1 lettre minuscule et 1 chiffre
+  terms_conditions: Accpeter les conditions d'utilisation (Lire)
+  deja_un_compte: J’ai déjà un compte
+  change_password: Changer mon mot de passe
+  repeat_password: Répeter mon mot de passe
+  requestpassword_indication: Un lien de Réinitialisation de mon mot de passse a été envoyé à 
+  message_account_create: consulter vos mails pour finaliser votre inscription
+  phone: Téléphone
+  ville_residence: Ville de résidence
+  old_password : Ancien Mot de passe
+  mail:
+    confirmation_inscription:
+      inscription: Inscription
+      salutation: Bonjour %email%
+      paragraphe1: Pour valider  votre compte utilisateur, merci de vous rendre sur
+      lien: Lien de Confirmation
+      unique_lien:   Ce Lien n'est qu'utilisable une seule fois
+    reinitialisation_mdp:
+      reinitialisation: Réinistialisation Mot de passe
+      salutation: Bonjour %email%
+      paragraphe1:  Vous vous apprêtez à modifier votre mot de passe, Si ce n'est pas vous qui avez effectué cette opération ne faite rien
+      lien: Lien de réinitialisation
+      unique_lien: Ce Lien n'est qu'utilisable une seule fois
+    cordialement: Cordialement
+    signature: L'équipe SafeColis
+
+
+messageflash:
+  Lien_de_notation_utilise: Ce lien de notation a déja été utilisé.
+  voyageur_note: Note attribuée au voyageur... Merci!!!
+  aucune_notaton: Aucun Voyage noté pour le moment.
+  recherche-transporteur-champ-vide: Champs Incomplets.
+  recherche-transporteur-vide: Recherche introuvable.
+  recherche-transporteur-trouve: 
+  completer_son_profil: Veuillez Renseigner vos nom et prenom afin d'ajouter un voyage
+  ajout-transporteur: Examination de l'annonce par la Direction.
+  Aucun-message: Votre boite de message est encore vide.
+  reservation-reussite: Votre demande de réservation a bien été transmise et est en cours d'examination
+  depassement-kilo: Vous avez entré un nombre de kilos supérieur à celui du voyageur.
+  reservation-authorise: Réservation acceptée avec success.
+  paiement-reservation-annule: Votre paiement n'a pas été effectué
+  solde-insuffisant: Solde insuffisant
+  paiement-reservation-annule-time-limit: Paiment de la réservtion annulé. L'opération a depassé le temps nécessaire de traitement.
+  paiement-reservation-effectue: Votre paiement a bien été effectué
+  Lien-Reinit-Use: Lien d'inscription déjà utilisé.
+  compte-actif: Inscription terminée!!! votre compte est maintenant actif.
+  error_login: Identifiant incorrect 
+  Utilisateur-Inexistant: Utilisateur inexistant.
+  Reinitialisation-Complete: Votre Mot de passe a bien été changé.
+  user_existant: Numéro de téléphone déjà existant
+  email_existant: Adresse email déjà existante
+  champs_incomplet: Veuillez renseigner tous les champs
+  Email_non_valide: Email non valide
+  mot_passe_non_valide: Incorrect password, Use at least 1 capital letter, 1 lowercase letter and 1 digit
+  numero_incorrect: Vous n'avez pas renseigné un numero de téléphone correct
+  send_mail_help_champs_vide: Veuillez renseigner tous les champs
+  send_mail_help_success: Votre mail a bien été transmis
+  send_mail_help_fail: L'envoie du mail a echoué.
+  mot_passe_different: Mot de passe non identique
+  medium_password: Mot de passe moyen
+  old_pass_diff : Ancien mot de passe différent

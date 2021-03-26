@@ -1,0 +1,87 @@
+<div class="plan" style="display: none">
+<div class="container ">
+    <div class="block">
+        <div class="divtop">
+            <div class="divTopBlockLeft"><i class="fa fa-user" aria-hidden="true"></i> Changer de plan </div>
+            <div class="divTopBlockRight"><a class="buttonblue closePlan"><i class="fa fa-cog" aria-hidden="true"></i>
+                    Mon abonnement</a></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="row">
+
+        <div class="col-md-4 col-xs-6 col-xxs-12 pb--30" style="cursor: pointer"
+        onclick="location.href='{{ path('safe_colis_abonnement_change_subscription', {'plan': 'month'}) }}'">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/send-mail.svg')}}" width="50" alt="">
+                <img src="{{asset('Ressources/img/features-img/send-mail.svg')}}" width="50" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">Mnesuel</h3>
+            </div>
+
+            <div class="desc">
+                <p>5 reservations.</p>
+                <p>5 jours d'essai gratuit.</p>
+                <h3><strong>${{ subs_month }}</strong></h3>
+
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+
+    <div class="col-md-4 col-xs-6 col-xxs-12 pb--30"
+        onclick="location.href='{{ path('safe_colis_abonnement_change_subscription', {'plan': '6months'}) }}'" style="cursor: pointer">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+                <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">6 Mois</h3>
+            </div>
+
+            <div class="desc">
+                <p>Reservations illimités.</p>
+                <p>5 jours d'essai gratuit.</p>
+                <h3><strong>${{ subs_6months }}</strong></h3>
+
+
+
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+
+    <div class="col-md-4 col-xs-6 col-xxs-12 pb--30" onclick="location.href='{{ path('safe_colis_abonnement_change_subscription', {'plan': 'year'}) }}'" style="cursor: pointer">
+        <!-- Feature Item Start -->
+        <div class="feature--item style--1 text-center">
+            <div class="img">
+                <img src="{{asset('Ressources/img/features-img/billet-white.png')}}" alt="">
+                <img src="{{asset('Ressources/img/features-img/billet.png')}}" alt="">
+            </div>
+
+            <div class="title">
+                <h3 class="h4">Annuel</h3>
+            </div>
+
+            <div class="desc">
+                <p>Reservations illimités.</p>
+                <p>5 jours d'essai gratuit.</p>
+                <h3><strong>${{ subs_year }}</strong></h3>
+
+            </div>
+        </div>
+        <!-- Feature Item End -->
+    </div>
+    </div>
+    </div>
+
+</div>

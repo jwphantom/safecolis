@@ -1,0 +1,28 @@
+{% extends "base-dash.html.twig" %}
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/email.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+{% block body %}
+<!-- Contact Section Start -->
+
+{% for message in app.flashes('send_mail_help_champs_vide')%}
+<div class="col-12" id="FlashMessageDanger">
+Veuillez renseigner tout les champs
+</div>
+{% endfor %}
+{% for message in app.flashes('send_mail_help_fail')%}
+<div class="col-12" id="FlashMessageSuccess">
+   L'envoie du mail a echoué.
+</div>
+{% endfor %}
+
+<div class="contact--form">
+    <div class="title text-center">
+        <p>Bien vouloir renseigner soigneusement tous les champs du formulaire afin de mieux nous aider à comprendre votre message.</p>
+    </div>
+    {% include ("SafeColisHomeBundle:Form:form-contact.html.twig") %}
+</div>
+<!-- Contact Form End -->
+
+{% endblock %}

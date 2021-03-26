@@ -1,0 +1,537 @@
+January : Enero
+Febuary : Febrero
+March : Marzo
+April: Abril
+May : Mayo
+June: Junio
+July: Julio
+August: Agosto
+September: Septiembre
+October: Octubre
+November : Noviembre
+December: Diciembre
+
+Jan : Enero
+Feb : Febrero
+Mar : Marzo
+Apr: Abril
+Jun: Junio
+Jul: Julio
+Aug: Agosto
+Sep: Septiembre
+Oct: Octubre
+Nov : Noviembre
+Dec: Diciembre
+
+Mon : Lunes
+Tue: Martes
+Wed: Miércoles
+Thu : Jueves
+Fri: viernes
+Sat : Sábado
+Sun : Domingo
+
+change_langue: Cambiar idioma
+francais: Francais
+english: English
+deutsch : Deutsch
+espagnol : espanol
+
+
+envoyeur: Remitente
+voyageur: Viajero
+transporter: Llevar
+reserver: Reservar
+composants: Componentes
+abonnement: Suscripción
+Aide: Ayuda
+apropos: A proposito
+conditions_utilisation: Condiciones de uso
+droit_reservé: Todos los derechos reservados 
+voir_profile: Ver perfil
+
+securite:
+  title: seguridad
+  description: |
+        Para su seguridad, identidades, pasajes aéreos y permisos de conducir.
+        de cada viajero son revisados antes de ser publicados en nuestra plataforma para
+        Garantizamos la trazabilidad. Y también es un sistema de calificación de viajeros.
+        Se planea aumentar su fiabilidad.
+benefice: 
+  title: beneficio
+  description: |
+        Haga sus anuncios de viaje y complete la cantidad de kilos que tiene
+        en nuestra plataforma, y los usuarios miembros podrán hacer una reserva.
+        De tus libras a través de nuestra plataforma.
+rapidite:
+  title: rapidez
+  description: |
+        Elija la fecha que más le convenga de la amplia gama disponible y haga
+        Reserve rápidamente sus libras en la gama de anuncios de viajes disponibles.
+
+
+follow:
+  us: siga con nosotros
+
+corebundle:
+  button:
+    home : bienvenida
+  slider:
+    title1: Gana dinero haciendo espacio en tu equipaje.
+    title2: Enruta fácilmente tus paquetes por todo el mundo. 
+    title3: Envía tu paquete a destino al precio de nada.
+    title4: Evalúe quién envía sus paquetes a su destino
+
+    texte1: Haga sus anuncios de viaje y la cantidad de kilogramos que tiene en nuestra plataforma para ganar dinero que amortizará sus gastos de viaje.
+    texte2: SafeColis conecta a las personas que desean enviar sus paquetes (equipaje, correo electrónico, bolsas, paquetes, etc.) a lugares específicos del mundo con las personas que harán este servicio por nada.
+    texte3: SafeColis le permite ahorrar en el envío de sus paquetes al darle la posibilidad de elegir en la lista no exhaustiva de salidas. Es esta flexibilidad al elegir a la persona que enviará su paquete a destino, lo que hace de SafeColis una solución rápida y muy económica.
+    texte4: Las personas que envían sus paquetes pueden evaluar a quienes los envían una vez que el paquete llega a su destino de manera segura. Sus comentarios, sus evaluaciones son importantes para nosotros y nos ayudan a mejorar constantemente para garantizarle un servicio de calidad y actualizado.
+  mes_reservations: Mis reservas
+  reglement_facture: Regulación de facturas
+  notes: Mis evaluaciones
+  deconnexion: Desconectar
+  connexion: Acceder
+  mes_voyages: Mis viajes
+  demande_reservation: Solicitud de Reservas
+  aide: Ayuda
+  contact: Contactar
+  faq: F.A.Q
+  terms_conditions: Términos de uso de SafeColis
+  info_apps: Infos Apps
+  about:  A proposito
+  about_paragraphe1: | 
+                    es una empresa que lo hace en la entrega de paquetería interurbana pero
+                    También en paquetería internacional. Ponemos en relacion
+                    Viajeros que son miembros de nuestro servicio que tienen kilos gratis en.
+                    Su equipaje con los remitentes, también miembros de nuestro servicio.
+                    deseando enviar su paquete a destinos similares a los
+                    los viajeros. Esto permite a los remitentes de paquetes ahorrar dinero cuando
+                    de sus paquetes de envío (los precios desafían cualquier concurrencia), y hay varias opciones posibles. Del mismo modo,
+                    los viajeros ganan dinero vendiendo sus kilos gratis, amortiguando así sus costos de transporte.
+  about_paragraphe2: | 
+                    Somos un equipo joven y dinámico cuyo sueño es construir más.
+                    Gran plataforma para el envío de paquetes a todo el mundo.
+  about_members_of_teams : Miembros del equipo
+  ceo: CEO
+  cto: CTO
+  contact_paragrpahe1: |
+                    En caso de necesidad, estamos abiertos siete días después.
+                    Siete, de 9h a 21h. Fuera de nuestro horario de apertura,
+                    Puedes dejar un mensaje en nuestro correo de voz.
+                    Llamanos o dejanos un mensaje a dirección
+  contact_phone : Teléfono
+  contact_client : cliente
+  contact_technique: técnico
+  social: social
+  contact_send_message: Déjanos un mensaje si es necesario
+  contact_titre: título
+  contact_placeholder_titre: Preocúpate con mi inscripción ....
+  contact_description: Descripción
+  contact_placeholder_description: descripción
+  contact_envoyer: enviar 
+  notification: notificación
+  profile : perfil
+  les_voyages: Los viajes
+  comment_ca_marche: ¿Como funciona?
+  signification_des_icones: Significado de los iconos
+  reservations: reserva
+  confirmation_de_l_administration: Confirmacion de administracion
+  evenemet_confirme: Evento confirmado
+  transaction_monetaire:  Transacción monetaria
+  code_couleur: Codigo de color
+  evenement_success: Éxito del evento
+  evenement_echec: Evento fallido
+  evenement_attente:  Evento en espera
+  evenement_statique: Evento estático
+  photo_profile:  Foto de perfil
+  mofifier_photo_profil: Para editar tu foto de perfil.
+  page_profile: Página de perfil 
+  changer_sa_photo: Cambia tu foto
+  selectionner_une_photo: Selecciona una foto
+  valider: validar
+  infos_personnelles: Información personal
+  modifier_ses_infos: Modificar su informacion
+  trois_point_apres_numero : Tres puntos después de tu número
+  modifier_son_compte: Editar mi cuenta
+  remplir_les_chanps:  Llenar los campos
+  mot_de_passe: Contraseña 
+  changer_son_mot_de_passe: cambia tu contraseña
+  recherche_voyage:  Buscar un viaje
+  pour_rechercher_un_voyage: Para buscar un viaje
+  listes_voyages: Lista de viajes 
+  entrer_une_ville_depart:  Introduce una ciudad de salida
+  entrer_une_ville_arrive: Introduce una ciudad de llegada
+  entrer_une_date: Introduce una fecha (opcional)
+  cliquer_sur: Haga clic en
+  
+
+
+form:
+  valider: validar
+
+transporteurbundle:
+  liste_voyage: Lista de viajes
+  ville_depart: Ciudad de salida
+  placeholder_ville_depart: Introduce una ciudad de salida
+  ville_arrive: Ciudad de llegada
+  placeholder_ville_arrive: Introduce una ciudad de llegada
+  date_depart: Fecha de salida (opcional)
+  heure_depart: Hora de salida
+  jour_depart: Dia de salida
+  kilo_disponible: Kilo disponible
+  prix_par_kilo: Precio por kilo
+  identification: Pasaporte / Tarjeta de identidad
+  justification: Boleto aéreo / licencia de conducir
+  chercher: Buscar
+  prix: Precio
+  disponible: Disponible
+  vendu: vendido
+  voyage_complet: Viaje completo
+  form:
+    ajouter: Añadir un viaje
+  recherche-transporteur-champ-vide: Campos incompletos.
+  recherche-transporteur-vide: Búsqueda no encontrada.
+  completer_son_profil: Por favor ingrese su nombre y apellido para agregar un anuncio de viaje
+  ajout-transporteur: Examen del anuncio por la Dirección.
+  mes_posts: Mis posts
+  posts_en_attente: Publicaciones siendo confirmadas
+  nombre_voyage: Número de viaje (s)
+  mes_voyages: Mis viajes
+  voyage_depasse: Viaje(s) pasado(s)
+  voyage_acheve: Viaje(s) completado(s)
+  examination_direction: Examen de gestion
+  details: Detalles
+  lieu: Lugar
+  reserver : Reservar
+  mail: 
+    note:
+      inscription: Registro
+      bonjour: Buenos dias
+      paragraphe1: |
+                Nos gustaría recibir sus comentarios sobre la entrega.
+                de su paquete que fue hecho de
+      vers: a
+      a: para
+      faire_l_evaluation_maintenant: Haz la evaluación ahora
+      le: La
+      paragraphe2_1 : Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros en
+      paragraphe2_2: De 9h a 21h todos los días de la semana.
+      paragraphe3 : |
+                Una vez que haga clic en el enlace contenido en su correo electrónico,
+                Lo redirigiremos a la página de inicio de sesión para capturarlo.
+                su información de inicio de sesión. Entonces, una vez que ha validado
+                Su información de acceso, la redirigiremos automáticamente.
+                a la página de evaluación.
+
+
+
+notificationbunde:
+  nombre_de_notification:
+    singulier: Tienes %notifications% nueva notificación
+    pluriel: Tienes %notifications% notificaciones nuevas
+  marquer_comme_lu: Marcar todo como leído
+  voir_tout: Ver todas las notificaciones
+  notification: Notificaciones
+  toutes_notifications: Todas las notificaciones
+  nouvelle_demande: Nueva solicitud de reserva
+  reservation_annule: Solicitud de reserva cancelada
+
+userbundle:
+  profile: perfil
+  numero_non_verifie: Número de teléfono no verificado
+  residence: Ciudad de residencia
+  description: descripción
+  mes_notes: Mis evaluaciones
+  connexion : acceder
+  remember: se acuerda de mi
+  valider: validar
+  forgot_password: Olvidé mi contraseña
+  subscribe:  Quiero inscribirme
+  accueill: bienvenida
+  inscription: Registro
+  nom: apellido
+  prenom: primer nombre
+  password: Contraseña
+  conditions_mot_de_passe: Use al menos 1 letra mayúscula, 1 letra minúscula y 1 dígito
+  terms_conditions: Aceptar los términos de uso (Leer).
+  deja_un_compte: Ya tengo una cuenta
+  change_password: Cambiar mi contraseña
+  repeat_password: Répter mon mot de passe
+  requestpassword_indication: Se envió un enlace para restablecer mi contraseña a
+  message_account_create: Revisa tus correos electrónicos para finalizar tu registro
+  phone: Teléfono
+  ville_residence: Ciudad de residencia
+  mail:
+    confirmation_inscription:
+      inscription: Registro
+      salutation: Buenos dias %email%
+      paragraphe1: Para validar su cuenta de usuario, vaya a
+      lien: Enlace de confirmación
+      unique_lien:   Este enlace solo es utilizable una vez
+    reinitialisation_mdp:
+      reinitialisation: Restablecer contraseña
+      salutation: Buenos dias %email%
+      paragraphe1:  Está a punto de cambiar su contraseña. Si no hizo esto, no haga nada.
+      lien: Restablecer enlace
+      unique_lien: Este enlace solo es utilizable una vez
+    cordialement: Atentamente
+    signature: El equipo de SafeColis
+
+comptabilitebudle:
+  comptabilite: contabilidad
+  mes_factures: Mis cuentas
+  reservation: reservas
+  a_regler: Reservas a pagar
+  facture: Factura
+  date: fecha
+  depart: salida
+  arrive: llegada
+  kilo_demande: Kilo preguntó
+  total_a_payer: Total a pagar 
+  motif: razón
+  reglement_facture: Pago de la factura.
+  mail:
+    salutation: Buenos dias %nom%
+    details_envoyeur:
+      paragraphe1: | 
+                Después de su confirmación con respecto a la solicitud de reserva realizada
+                por el miembro %nom_envoyeur% en su viaje desde  %depart% a %arrive%, la %date% a %heure%,
+                Le informamos que la reserva acaba de finalizar.
+      paragraphe2: |
+                El miembro %nom_voyageur% ha reservado %kilo_achete%.
+                Como resultado, le dará una cantidad total de %somme_voyageur% $CAD
+                Para el servicio que lo va a prestar.
+      paragraphe3: |
+                Member %nom_envoyeur% le da acceso tanto a su correo electrónico como a su
+                contacto telefónico para que pueda ingresar el contacto.
+      politesse:  Gracias por confiar en SafeColis.
+      follow: Síguenos en nuestras redes sociales.
+  client: cliente
+  technique: técnico
+  cordialement: Atentamente
+  signature: El equipo de SafeColis
+
+
+
+messageflash:
+  Lien_de_notation_utilise: Este enlace de calificación ya ha sido utilizado.
+  voyageur_note: Calificación atribuida al viajero ... Gracias !!!
+  aucune_notaton: Ningún viaje observado todavía.
+  recherche-transporteur-champ-vide: Campos incompletos.
+  recherche-transporteur-vide: Búsqueda no encontrada.
+  recherche-transporteur-trouve: 
+  completer_son_profil: Por favor ingrese su nombre y apellido para agregar un viaje
+  ajout-transporteur: Examen del anuncio por la Dirección.
+  Aucun-message: Su cuadro de mensaje todavía está vacío.
+  reservation-reussite: Su solicitud de reserva ha sido enviada y está siendo examinada.
+  depassement-kilo: Has introducido un número de kilos más alto que el del viajero.
+  reservation-authorise: Reserva aceptada con éxito.
+  paiement-reservation-annule: Su pago no se ha realizado.
+  solde-insuffisant: Saldo insuficiente
+  paiement-reservation-annule-time-limit: Pago de la reserva cancelada. La operación superó el tiempo de tratamiento requerido.
+  paiement-reservation-effectue: Su pago ha sido realizado.
+  Lien-Reinit-Use: Registro de registro ya utilizado.
+  compte-actif: Inscripción completada !!! su cuenta ahora está activa.
+  error_login: Identificador incorrecto 
+
+  Utilisateur-Inexistant: Usuario inexistente.
+  Reinitialisation-Complete: Su contraseña ha sido cambiada.
+  user_existant: Número de teléfono existente
+  email_existant: Dirección de correo electrónico ya existente
+  champs_incomplet: Por favor complete todos los campos
+  Email_non_valide: Email invalido
+  mot_passe_non_valide: Contraseña incorrecta, use al menos 1 mayúscula, 1 minúscula y 1 dígito
+  numero_incorrect: No ha introducido un número de teléfono correcto
+  send_mail_help_champs_vide: Por favor complete todos los campos
+  send_mail_help_success: Tu email ha sido enviado
+  send_mail_help_fail: El envío del correo ha fallado.
+
+messagebundle:
+  message: mensaje
+  messages: mensajes
+  conversations: conversaciones
+  mes_messages: Mis mensajes
+  non_lu:
+    mixte: No Leer(s)
+    singulier: No leído
+  lu:
+    mixte: Leer(s)
+    singulier:  Leer
+  details: detalles
+  salutation: Buenos dias %nom% %prenom%
+  info_voyageur:
+    paragraphe1: |
+            Después de su confirmación con respecto a la solicitud de reserva realizada.
+            por el miembro %nom_envoyeur% en sue de %villedepart% a %villearrive%
+            El %jour% %date% %mois% %annee% to %heure%, informamos que la reserva
+            acaba de ser finalizado
+    paragraphe2: |
+              El miembro %nom_envoyeur% ha reservado %kilovoulu% Kg.
+              Como resultado, le dará una cantidad total de %prix% $CAD
+              Para el servicio que lo va a prestar.
+    paragraphe3: |
+            Member %nom_envoyeur% le da acceso tanto a su correo electrónico como a su
+            Contacto telefónico para que puedas contactar con él o ella.
+    paragraphe4: Gracias por confiar en SafeColis.
+    paragraphe5: Síguenos en nuestras redes sociales.
+    client : cliente
+    technique: técnico
+    cordialement: Atentamente
+  details_facture_reservation:
+    reservation: reserva
+    paragraphe1: |
+              Felicitaciones! Su transacción se ha completado con éxito. He aquí los
+              detalles de su transacción
+    n_ref: Numero de referencia
+    code_reponse: Código de respuesta
+    date_transaction: Fecha de la transaccion
+    code_iso: Código ISO
+    heure_transaction: Hora de la transacción
+    n_autorisation:  Número de autorización
+    prix_reservation: Precio de reserva
+    sous_total: Total parcial
+    total: Total
+    date_depart: Fecha de salida
+    heure_depart: Hora de salida
+    technique: técnico
+    cordialement: Atentamente
+    a_prevoir: predecir para el viajero
+  details_voyage:
+    paragraphe1: |
+              Gracias por reservar su paquete desde %ville_depart% 
+              a %ville_arrive% gracias al contacto.
+              hecho por safecolis con un viajero que entregará su paquete a destino.
+              Aquí está la información sobre su reserva.
+    paragraphe2: |
+              La entrega de su paquete es ofrecida por %nom_voyageur%, miembro del servicio ofrecido
+              por safecolis, y tendrá lugar en %jour% %date% %mois% %annee% en %heure%
+    paragraphe3: |
+              Gracias por proporcionar una cantidad de %prix% $CAD en efectivo
+               (moneda exacta, por favor) si conoce físicamente al viajero o
+               Por un acuerdo de pago (transferencia bancaria o transferencia interac).  
+    paragraphe4: |
+              Te aconsejamos que conozcas al viajero físicamente.
+              en la medida de lo posible para saber mejor quién
+              transportará su paquete. Al recibir este correo electrónico,
+              Te aconsejamos que contactes rápidamente con el
+              Viajero que ha sido asignado a usted y por lo tanto ahora posee
+              información de contacto para escucharlo sobre el procedimiento a seguir para
+              que su paquete llegue a un buen destino y de forma segura.
+              La forma en que el paquete llegará al viajero quedará a su cuidado,
+              Discutirás la mejor manera y te comprometerás.
+              Si no puedes conocerte físicamente, envía tu paquete.
+              a su viajero por correo como fecha límite para la recepción de paquetes por parte del viajero.
+    paragraphe5: |
+              El usuario %nom_voyageur%, le da acceso a su correo electrónico, así como
+              su número de teléfono
+    paragraphe6: |
+              Estamos abiertos los siete días de la semana de 9am a 9pm.
+              Fuera de nuestro horario de apertura, puedes
+              deje un mensaje en nuestro buzón de correo de voz o
+              Todavía nos deja un mensaje en service@safecolis.com.
+    et: con
+    follow_1: Únete a nosotros en nuestras redes sociales.
+    follow_2: para aprender más sobre nuestros servicios y operaciones, pero especialmente para aprender más sobre nuestros proyectos futuros.
+    politesse: Gracias por elegir la solución SafeColis para la entrega de sus paquetes en todo el mundo.
+  livraison_effectué:
+    paragraphe1: |
+              Nos gustaría recibir sus comentarios sobre la entrega de su
+              la parcela se hizo de %villedpart% a %villearrive%
+              el %jour% %date% %mois% %annee% to %heure%
+    paragraphe2: |
+              (Haga la evaluación ahora (%villedepart% to %villearrive%
+              el %jour% %date% %mois% %annee%)
+    paragraphe3: |
+              Si tiene alguna pregunta, no dude en ponerse en contacto con nosotros en
+              <a href="tel:+15149969835"> +1(514)996-9835 </a>, de 9am a 9pm, todos
+              los días de la semana.
+    paragraphe4: |
+              Este enlace es para un solo uso.
+  premiere_connexion:
+    sous_titre: Cómo funciona SafeColis
+    mode_voyageur:
+      titre: En modo viajero
+      paragraphe1: |
+              Para crear su anuncio, regístrese primero y envíe su anuncio
+              Con toda la información necesaria. Una vez que tengamos
+              revisamos su anuncio, se publicará si juzgamos que no lo hace
+              No presenta ninguna anomalía. De lo contrario será rechazado.
+      paragraphe2: |
+              Recibe notificaciones, una vez que (SafeColis) hayamos publicado.
+              vuestro anuncio. Si se niega a publicar su anuncio,
+              También recibirá una notificación.
+      paragraphe3: |
+              Recoger solicitudes de reserva una vez que su anuncio
+              publicado en la plataforma SafeColis, muchos
+              Los usuarios que deseen enviar su paquete a través de su anuncio.
+              Hará sus solicitudes de reserva.
+      paragraphe4: |
+              Aceptar o rechazar una solicitud de reserva, se deja a
+              su propio cuidado de aceptar o rechazar una solicitud de reserva.
+              Si rechaza una solicitud de reserva, el proceso se detiene
+              allí. Pero si acepta una solicitud de reserva, recibirá
+              después de un cierto tiempo (este tiempo dependerá de la velocidad
+              con el cual el remitente del paquete pagará su factura a
+              SafeColis) información sobre quién hizo
+              La reserva en su anuncio.
+      paragraphe5: |
+              Conoce, conoce a los miembros que reservaron las libras.
+              De su viaje a través de sus contactos que recibió por correo electrónico.
+              o por mensaje en la plataforma safecolis.com
+    mode_envoyeur:
+      titre: En modo de envío
+      paragraphe1: |
+              Para consultar Consulte los anuncios de viaje, regístrese primero (si es su primer uso de la plataforma),
+              A continuación, echa un vistazo a los anuncios de viajes publicados por los viajeros
+              Miembros de nuestra plataforma.
+      paragraphe2: |
+              Introduzca sus criterios de selección, rellene los campos ciudad de
+              Salida, ciudad de llegada y fecha de salida a filtrar.
+              Solo los viajes relevantes para ti.
+      paragraphe3: | 
+              Haga una reserva en un viaje, seleccione el viaje que
+              cumple con sus expectativas, ingrese información sobre
+              su paquete (descripción del paquete, número de kilogramos buscados), luego
+              terminar su solicitud de reserva.
+      paragraphe4: |
+              Resuelva la factura, una vez que el viajero haya aceptado su
+              solicitud de reserva. Tendrá que pagar 5 $CAD (que representa el costo de conectarse con el viajero
+              realizado por SafeColis).
+      paragraphe5: |
+              Reúnase una vez que haya pagado su factura a SafeColis a través de la aplicación Stripe
+              Recibirá información sobre el viajero y se dejará a su gusto de la manera que lo desee.
+              encuentro. Sin embargo, sería bueno predecir cuánto debería pagar
+              Viajero para la entrega de su paquete a su destino.
+
+  contact: Contactar 
+  client: cliente
+  technique: técnico   
+  signature: El equipo de SafeColis
+
+envoyeurbundle:
+  mes_reservations: Mis reservas
+  reservation: reserva
+  reservations: reservas
+  depart: salida
+  arrive: llegada
+  kilo_voulu: Kilo quería
+  motif: razón
+  statut: estatus 
+  regler_la_facture: Liquidar la factura
+  supprimer: eliminar
+  facture_paye: Factura pagada
+  payer: Paga
+  voyage_depasse: Viaje excedido
+  faire_une_reservation: Hacer una reserva
+  description: descripción
+  mes_demandes: Mis peticiones
+  demandes_reservations: Solicitudes de reserva
+  total_a_payer: Total a pagar
+  en_attente: A la espera
+  accepter: aceptar
+  accepte: aceptado
+  refuser: Rechazar
+  
+
+#message bundle infos voyageur
+Infos de l'envoyeur: Información del remitente4

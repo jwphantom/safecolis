@@ -1,0 +1,17 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: j5zntocs2dn6c3fj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com	
+    database_port: 3306
+    database_name: jxakl8j0c47n1gmd
+    database_user: m5m70n0ubth4qt3c
+    database_password: ttprgah2qt2lyvsy
+    mailer_transport: smtp
+    mailer_host: smtp.gmail.com
+    mail_from: sudogen.enterprise@gmail.com
+    mailer_user: sudogen.enterprise@gmail.com
+    mailer_password: SudogenBeauty20$
+    mailer_auth_mode: login
+    app_version: 0.2.0
+    mailer_port: 587
+    mailer_encryption: tls
+    secret: ThisTokenIsNotSoSecretChangeIt

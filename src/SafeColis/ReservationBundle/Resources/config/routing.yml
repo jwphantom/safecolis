@@ -1,0 +1,24 @@
+safe_colis_reservation_menu:
+    path:     /reservation/
+    defaults: { _controller: SafeColisReservationBundle:MenuReservation:menu }
+
+safe_colis_mes_reservation:
+    path:     /reservation/mes-reservation/
+    defaults: { _controller: SafeColisReservationBundle:MesReservations:all }
+
+safe_colis_mes_demandes:
+    path:     /reservation/mes-demandes/
+    defaults: { _controller: SafeColisReservationBundle:MesDemandes:all }
+
+
+safe_colis_reservation_supprmier:
+    path:     /reservation/supprimer/{id}
+    defaults: { _controller: SafeColisReservationBundle:MesReservations:del }
+
+safe_colis_reservation_accepter:
+    path:     /reservation/accepter/{id}
+    defaults: { _controller: SafeColisReservationBundle:MesDemandes:accept }
+
+safe_colis_reservation_pay:
+    path:     /reservation/pay/{id}
+    defaults: { _controller: SafeColisReservationBundle:PayReservation:pay }

@@ -1,0 +1,508 @@
+
+
+#inputupload{
+    display: none;
+}
+
+#buttonupload{
+    border: 2px solid ;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    font-size: 13px;
+    width: 100%;
+}
+
+#buttonupload:hover{
+    background-color: #2683ff;
+    color: white;
+    cursor: pointer;
+}
+
+
+#headerNav .nav .button-primary{
+    color: white;
+    background: #2683ff;
+} 
+
+#headerNav .nav .button-primary:hover{
+    color: white;
+    background: black;
+} 
+
+#userMenu .modal-body .title h2{
+    color: black;
+}
+
+#userMenu .modal-body .btn{
+    color: black;
+    border-color: black;
+}
+
+#userMenu .modal-body .btn:hover{
+    color: white;
+    border-color: black;
+    background-color: black;
+}
+
+.form-group .boutton-recherche{
+    border-color: rgb(177, 177, 177);
+}
+
+
+#FlashMessageSuccess{
+    color: white;
+    background: rgb(146, 208,80 );
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#FlashMessageDanger{
+    color: white;
+    background: rgb(192,0,0);
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#buttonWarning{
+    color: white;
+    background: orange;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#buttonSuccess{
+    color: white;
+    background: rgb(146, 208,80 );;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    width:100%;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.buttonWarning{
+    color: white;
+    background: orange;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.buttonSuccess{
+    color: white;
+    background: rgb(146, 208,80 );;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#buttonWarning:hover{
+    color: white;
+    background: black;
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#buttonSearchInResult{
+    color: white;
+    background: rgb(0,0,0);
+    font-size: 15px;
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.title{
+    font-weight: bold;
+}
+
+
+.voyages .post--item .content{
+    font-size: 16px;
+    color: gray;
+}
+
+
+/* profile */
+.profile{
+    padding: 60px 30px 50px;
+    color: #393939;
+    background-color: #fff;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 10px #888888;
+    -webkit-transition: color .3s ease-in-out, background-color .3s ease-in-out;
+    transition: color .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+
+.profile.style--2{
+    padding: 0;
+    color: #696969;
+    background-color: transparent;
+}
+
+.profile .img {
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 24px;
+    background-color: #ff5252;
+    border-radius: 50%;
+    line-height: 100px;
+    text-align: center;
+    -webkit-transition: background-color .3s ease-in-out;
+    transition: background-color .3s ease-in-out;
+}
+
+.profile:hover .img {
+    background-color: #fff;
+}
+
+.profile .img img + img,
+.profile:hover .img img {
+    display: none;
+}
+
+.profile:hover .img img + img {
+    display: inline-block;
+}
+
+
+
+.profile .title .h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.profile.style--2 .title .h4 {
+    color: #393939;
+    text-transform: uppercase;
+}
+
+.profile .desc {
+    margin-top: 8px;
+    padding-bottom: 3px;
+}
+
+.text-profile{
+    font-size: 18px;
+    color: #888888;
+    font-weight: bold;
+}
+
+
+
+.ck-editor__editable_inline {
+    min-height: 300px;
+  }
+
+
+/* //mon bloc */
+
+
+.block{
+
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 2px 2px 10px #888888;
+    margin-bottom: 20px;
+}
+
+.block .divtop{
+
+    background-color: aliceblue;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+    width: 100%;
+
+
+}
+
+.block .divtop .divTopBlockLeft{
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.block .divtop .divTopBlockRight{
+    float: left;
+    width: 50%;
+    text-align: right;
+    font-size: 15px;
+}
+
+.buttonblue{
+    background: #2683ff;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    width:100%;
+    border: none;
+    cursor: pointer;
+
+}
+
+.buttonblue:hover{
+    background: black;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px white;
+
+
+}
+
+
+   
+.block .contenu{
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    font-size: 16px;
+
+}
+
+.block .form_search{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    font-size: 16px;
+}
+
+.block2 label{
+    background: #2683ff;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block2 input[type=text]{
+    height: 70px;
+    font-size: 20px;
+}
+
+.block2 input[type=date]{
+    height: 70px;
+    font-size: 20px;
+
+}
+
+.block2 .checkbox{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    
+    .block .divtop{
+    
+        background-color: aliceblue;
+        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    
+    
+    }
+    
+    .block .divtop .divTopBlockLeft{
+        float: left;
+        width: 50%;
+        font-size: 15px;
+        font-weight: bold;
+    }
+    
+    .block .divtop .divTopBlockRight{
+        float: left;
+        width: 50%;
+        text-align: right;
+        font-size: 12px;
+    }
+ 
+    .buttonblue{
+        background: #2683ff;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+    }
+
+    .block .contenu{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 40px;
+        font-size: 13px;
+    
+    }
+}
+
+
+.mytitle{
+    font-size: 15px;
+    font-weight: bold;
+    
+
+}
+
+.option:hover{
+
+    background: honeydew;
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.option{
+
+    padding: 10px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.logo-top{
+    margin-top: 15px;
+    margin-left: 30px;
+    width: 150px;
+}
+
+.expediteur-navbar{
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .footer-custom .footer--copyright p{
+       font-size: 10px;
+    }
+
+    .footer-custom .footer--copyright i{
+        font-size: 10px;
+     }
+}
+
+
+.header--navbar .user_drop{
+    position: absolute;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .logo-navbar{
+        display: none;
+    }
+    
+   
+    .expediteur-navbar{
+        margin-top: 17px;
+        margin-left: 30px;
+        font-size: 30px;
+    }
+
+    .voyageur-navbar{
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .billet-navbar{
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+    .user-navbar{
+        margin-top: 17px;
+        margin-left: 10px;
+        font-size: 30px;
+        padding-top: 0;
+    padding-bottom: 0;
+    }
+}
+
+
+.header_custom ul {
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.header--topbar .logo-navbar-custom{
+    margin-left: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .header_custom ul {
+        color: #000;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .header--topbar {
+        padding: 20px 0;
+        color: #eee;
+        font-weight: 400;
+        box-shadow: 0 5px 10px gray;
+    }
+
+
+    .header--topbar span{
+        display: none;
+    }
+
+    .header--topbar .float--left{
+        margin-left: 10px;
+    }
+
+    .header--topbar .float--right{
+        margin-right: 10px;
+    }
+
+}
+

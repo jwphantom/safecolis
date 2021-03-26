@@ -1,0 +1,85 @@
+{% extends "base-dash.html.twig" %}
+
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/choice.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+
+
+{% block body %}
+
+<!-- Features Section Start -->
+<div class="container">
+{% for message in app.flashes('send_mail_help_success')%}
+<div class="col-12" id="FlashMessageSuccess">
+Votre mail a bien été transmis
+</div>
+{% endfor %}
+
+    <div class="row AdjustRow" data-scroll-reveal="group">
+        <div class="col-md-4 col-xs-6 col-xxs-12 pb--30" style="cursor: pointer"
+            onclick="location.href='{{ path('safe_colis_expedieur_recherche_voyage') }}'">
+            <!-- Feature Item Start -->
+            <div class="feature--item style--1 text-center">
+                <div class="img">
+                    <img src="{{asset('Ressources/img/features-img/send-mail.svg')}}" width="50" alt="">
+                    <img src="{{asset('Ressources/img/features-img/send-mail.svg')}}" width="50" alt="">
+                </div>
+
+                <div class="title">
+                    <h3 class="h4">Expedier</h3>
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit consectetur sed do
+                        eiusmod tempor.</p>
+                </div>
+            </div>
+            <!-- Feature Item End -->
+        </div>
+
+        <div class="col-md-4 col-xs-6 col-xxs-12 pb--30"
+            onclick="location.href='{{ path('safe_colis_voyageur_choice_transport') }}'" style="cursor: pointer">
+            <!-- Feature Item Start -->
+            <div class="feature--item style--1 text-center">
+                <div class="img">
+                    <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+                    <img src="{{asset('Ressources/img/features-img/airplane.svg')}}" width="50" alt="">
+                </div>
+
+                <div class="title">
+                    <h3 class="h4">Voyager</h3>
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit consectetur sed do
+                        eiusmod tempor.</p>
+                </div>
+            </div>
+            <!-- Feature Item End -->
+        </div>
+
+        <div class="col-md-4 col-xs-6 col-xxs-12 pb--30" style="cursor: pointer">
+            <!-- Feature Item Start -->
+            <div class="feature--item style--1 text-center">
+                <div class="img">
+                    <img src="{{asset('Ressources/img/features-img/billet-white.png')}}" alt="">
+                    <img src="{{asset('Ressources/img/features-img/billet.png')}}" alt="">
+                </div>
+
+                <div class="title">
+                    <h3 class="h4">Billet d'avion</h3>
+                </div>
+
+                <div class="desc">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit consectetur sed do
+                        eiusmod tempor.</p>
+                </div>
+            </div>
+            <!-- Feature Item End -->
+        </div>
+
+    </div>
+</div>
+<!-- Features Section End -->
+{% endblock %}

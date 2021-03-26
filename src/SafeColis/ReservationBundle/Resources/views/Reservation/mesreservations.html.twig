@@ -1,0 +1,100 @@
+{% extends "base-dash.html.twig" %}
+{% block title %}
+{{ parent() }}
+-
+{{ namepage }}
+{% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/cart.svg')}}" width="30" />
+{{ namepage }}
+{% endblock %}
+{% block body %}
+{% for message in app.flashes('reservation_effectue')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Reservation envoyé au voyageur. veuillez patientez sa réponse
+</div>
+{% endfor %}
+{% for message in app.flashes('suppression_reservation')%}
+<div class="col-12" id="FlashMessageSuccess">
+Reservation supprimée.
+</div>
+{% endfor %}
+{% for message in app.flashes('suppression_reservation_impossible')%}
+<div class="col-12" id="FlashMessageDanger">
+Impossible supprimé une reservation débité.
+</div>
+{% endfor %}
+
+{% for message in app.flashes('paiement-reservation-annule')%}
+<div class="col-12" id="FlashMessageDanger">
+    {{ message }}.
+</div> 
+{% endfor %}
+
+{% for message in app.flashes('paiement-abonnement-annule-time-limit')%}
+<div class="col-12" id="FlashMessageDanger">
+    {{ message }}.
+</div> 
+{% endfor %}
+
+{% for message in app.flashes('paiement-reservation-effectue')%}
+<div class="col-12" id="FlashMessageSuccess">
+    {{ message }}.
+</div> 
+{% endfor %}
+
+<div class="row voyages AdjustRow">
+    {% for item in result %}
+    <div class="col-md-12 col-sm-12 pb--30">
+        <!-- Post Item Start -->
+        <div class="post--item">
+            <div class="post--inner">
+                <div class="title">
+                    <h2 class="h4">
+                        <span class="title"><i class="fa fa-calendar" aria-hidden="true"></i>
+                            {{ item.voyage.datedepart|date('l,d F Y ') }} à {{ item.voyage.heuredepart('H:i') }} </span>
+                    </h2>
+                </div>
+
+                <div class="content">
+                    <div class="col-sm-12">
+                        <p><strong>{{ item.voyage.villedepart}}</strong> <i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+                            <strong>{{ item.voyage.villearrive}}</strong><br>  
+                            Kilo voulu :
+                            <strong>{{ item.kilovoulu}}</strong> <br> Prix Reservation:
+                            <strong>{{ item.voyage.prixkilo * item.kilovoulu }}$</strong> </p>
+                    </div>
+                </div>
+                {% if item.etat == 0 %}
+                 <div class="action text-right">
+                    <a href="#formDelete-{{ item.id }}" data-toggle="modal" id="buttonWarning">Supprimer <i class="fa fa-trash" aria-hidden="true"></i></a>
+                </div>
+                {% endif %}
+
+                {% if item.etat == 1 and item.paye == 0 %}
+                <div class="action text-right">
+                    <a href="{{ path('safe_colis_reservation_pay', {'id':item.id }) }}" class="buttonblue">Payer votre reservation</a>
+                </div>
+                {% endif %}
+
+                {% if item.etat == 1 and item.paye == 1 %}
+                <div class="action text-right">
+                    <a  id="buttonSuccess"><i class="fa fa-thumbs-up" aria-hidden="true"></i>
+ Reservation payé </a>
+                </div>
+                {% endif %}
+                
+                
+                
+            </div>
+        </div>
+                        {% include ("SafeColisReservationBundle:Form:formDelete.html.twig") %}
+
+        <!-- Post Item End -->
+    </div>
+    {% endfor %}
+</div>
+
+<!-- Contact Section End -->
+{% endblock %}

@@ -1,0 +1,130 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/user.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+
+
+{% block body %}
+{% for message in app.flashes('edit_username')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Profile bien mis à jour</div>
+</div>
+{% endfor %}
+{% for message in app.flashes('password_changed')%}
+<div class="col-12" id="FlashMessageSuccess">
+    Mot de passe bien changé</div>
+</div>
+{% endfor %}
+
+
+<!-- Features Section End -->
+<form method="POST" action="{{ path('profile_view')}}">
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="block">
+
+            <div class="divtop">
+                <div class="divTopBlockLeft"><i class="fa fa-user" aria-hidden="true"></i> {{ namepage }}</div>
+                <div class="divTopBlockRight"><a class="buttonblue" href="{{ path('change_password')}}"><i
+                            class="fa fa-cog" aria-hidden="true"></i> Mot de passe</a></div>
+            </div>
+
+            <div class="contenu">
+
+                <p class="element viewusername"><strong class="col-sm-2 col-xs-4">Pseudo : </strong>
+                    {% if app.user.username == NULL %}
+                    *Vide*
+                    {% else %}
+                    {{ app.user.username }} &nbsp;
+                    {% endif %}
+                    <a id="editUsername"><i class="fa fa-edit"></i></a>
+                </p>
+                <p>
+                    <div class="row" id="username" style="display: none">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <input name="username" id="username" value="{{app.user.username}}" type="text"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <button type="submit" class="btn btn-md btn-block btn-default ">Valider<i
+                                    class="ml--8 fa fa-long-arrow-right"></i></button>
+                        </div>
+                        <div class="col-sm-3 col-xs-6" id="AnnulerUsername">
+                            <a class="btn btn-md btn-block btn-default active">Annuler <i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+
+                </p>
+                <p class="element"><strong class="col-sm-2 col-xs-4">Email : </strong>
+                    {{ app.user.email }}
+                </p>
+                <p class=" element viewNom"><strong class="col-sm-2 col-xs-4">Nom : </strong>
+                    {% if app.user.nom == NULL %}
+                    *Vide*
+                    {% else %}
+                    {{ app.user.nom }} &nbsp;
+                    {% endif %}
+                    <a id="editNom"><i class="fa fa-edit"></i></a>
+                </p>
+                <p>
+                    <div class="row" id="nom" style="display: none">
+                        <div class="col-sm-6 col-xs-12">
+                            <div class="form-group">
+                                <input name="nom" id="nom" value="{{app.user.nom}}" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <button type="submit" class="btn btn-md btn-block btn-default ">Valider<i
+                                    class="ml--8 fa fa-long-arrow-right"></i></button>
+                        </div>
+                        <div class="col-sm-3 col-xs-6" id="AnnulerNom">
+                            <a class="btn btn-md btn-block btn-default active">Annuler <i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </p>
+                <p class="element viewPrenom"><strong class="col-sm-2 col-xs-4">Prénom : </strong>
+                    {% if app.user.prenom == NULL %}
+                    *Vide*
+                    {% else %}
+                    {{ app.user.prenom }} &nbsp;
+                    {% endif %}
+                    <a id="editPrenom"><i class="fa fa-edit"></i></a>
+
+                </p>
+                <p>
+                    <div class="row" id="prenom" style="display: none">
+                        <div class="col-sm-6 col-sm-12">
+                            <div class="form-group">
+                                <input name="prenom" id="prenom" value="{{app.user.prenom}}" type="text"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-sm-3 col-xs-6">
+                            <button type="submit" class="btn btn-md btn-block btn-default ">Valider<i
+                                    class="ml--8 fa fa-long-arrow-right"></i></button>
+                        </div>
+                        <div class="col-sm-3 col-xs-6" id="AnnulerPrenom">
+                            <a class="btn btn-md btn-block btn-default active">Annuler <i class="fa fa-times"
+                                    aria-hidden="true"></i></a>
+                        </div>
+
+                    </div>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</form>
+
+{% endblock %}

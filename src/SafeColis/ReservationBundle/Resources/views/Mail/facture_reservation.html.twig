@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SafeColis - Facture reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body style="">
+    
+
+ {% block subject  %}<br>{% endblock %}
+{% block body %}
+     <div style="text-align: center; padding: 13px;  font-size: 13px;">
+        
+                <div style="text-align:left; font-weight: bold; padding-bottom: 13px;">
+                    SafeColis<br><br>
+                </div>
+                <div style="text-align:left" style="margin-bottom: 20px; margin-top:30px;">
+                    <a href="www.safecolis.com" style="text-decoration:none; padding-bottom: 13px; background: #177dff; padding-top: 13px; padding-left: 5px; padding-right: 5px; color: white">
+                        www.safecolis.com
+                    </a>
+                </div>
+                <br><br>
+                <div style="text-align:left; padding-bottom: 13px;">
+                    
+                    <span style="font-weight: bold;">{{ 'comptabilitebudle.mail.salutation'|trans({'%nom%': nom }) }}</span>
+                </div>
+        
+                <div style="text-align:left; padding-bottom: 20px;">
+                    {{ 'messagebundle.details_facture_reservation.paragraphe1'|trans }}:
+                </div>
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;" class="info-paiement">
+                    #### {{ 'messagebundle.details_facture_reservation.n_ref'|trans }} : <span style="font-size:12px">{{ reference }}</span><br/><br/>
+                    #### {{ 'messagebundle.details_facture_reservation.code_reponse'|trans }} : 027<br/><br/>
+                    #### {{ 'messagebundle.details_facture_reservation.date_transaction'|trans }}: {{ date_transaction|date('Y-m-d') }} UTC<br/><br/>
+                    #### {{ 'messagebundle.details_facture_reservation.code_iso'|trans }} : 01<br/><br/>
+                    #### {{ 'messagebundle.details_facture_reservation.heure_transaction'|trans }}: {{ date_transaction|date('H:i:s') }} UTC <br/><br/>
+                    #### {{ 'messagebundle.details_facture_reservation.n_autorisation'|trans }} : 011691<br/><br/>
+                </div>
+                <hr>
+        
+                <div class="prix-reserv" style="font-weight: bold; float: left;">
+                    {{ 'messagebundle.details_facture_reservation.prix_reservation'|trans }} : 
+                </div>
+                
+                <div class="prix" style="font-weight: bold; color: #177dff; text-align: right">
+                    5.75$
+                </div>
+                <br>
+                <div class="prix-reserv" style="float: left; font-size: 11px;">
+                    {{ 'messagebundle.details_facture_reservation.sous_total'|trans }}:             
+                </div>
+                    
+                <div class="prix" style="text-align: right; font-size: 11px;">
+                    5.00$
+                </div>
+                <br>
+        
+                <div class="prix-reserv" style="float: left; font-size: 11px;">
+                    TPS (862394764):          
+                </div>   
+                <div class="prix" style="text-align: right; font-size: 11px;">
+                    0.25$
+                </div>
+                <br>
+        
+                <div class="prix-reserv" style="float: left; font-size: 11px;">
+                    TVQ (1212097639):      
+                </div>   
+                <div class="prix" style="text-align: right; font-size: 11px;">
+                    0.50$
+                </div>  
+                <br>
+        
+                <div class="prix-reserv" style="float: left; font-size: 11px;">
+                    {{ 'messagebundle.details_facture_reservation.total'|trans }}:      
+                </div>   
+                <div class="prix" style="text-align: right; font-size: 11px;">
+                    5.75$
+               </div>
+               <hr>    
+        
+               <div class="info-voyage" style="text-align: left; font-size: 11px; " >
+                   Réservation : {{ depart }} -> {{ arrive }} (Date de départ: {{ date|date('l d F Y') }}, Heure de départ : {{ date|date('H:i') }})<br><br>
+                    <span  style="font-weight: bold;">{{ somme_voyageur }}$</span> à prévoir pour le voyageur <span  style="font-weight: bold;">{{nom_voyageur}}</span>
+               </div>
+               <div class="info-voyage" style="text-align: left; font-size: 13px; " >
+                    {{ 'messagebundle.details_facture_reservation.reservation'|trans }} : {{ depart }} -> {{ arrive }}
+                                
+                    ({{ 'messagebundle.details_facture_reservation.date_depart'|trans }}: {{ date|date('D')|trans }} 
+                    {{ date|date('d')}}
+                    {{ date|date('F')|trans}}
+                    {{ date|date('Y')}}, 
+                    {{ 'messagebundle.details_facture_reservation.heure_depart'|trans }} : {{  date|date('H:i') }})<br><br>
+                                <span  style="font-weight: bold;">{{ somme_voyageur }}$</span> {{ 'messagebundle.details_facture_reservation.a_prevoir'|trans }} <span  style="font-weight: bold;">{{nom_voyageur}}</span>
+                            </div>
+                    
+        
+                <hr>
+        
+                <div class="enjoy" style="text-align: left ; font-size: 13px;"><br>
+                        Venez jaser avec nous sur <a href="{{ app_facebook }}">Facebook</a> ,
+     <a href="{{ app_instagram }}">instagram</a>, 
+      <a href="https://twitter.com/safecolis">tweeter</a>.
+                </div>
+                <br><br>
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;">
+                    <a href="www.safecolis.com" style="text-decoration:none; padding-bottom: 13px; background: #177dff; padding-top: 13px; padding-left: 5px; padding-right: 5px; color: white">
+                            www.safecolis.com
+                    </a>
+                </div>
+                <br>
+                <div style="text-align:left; padding-bottom: 13px; font-size: 13px;">
+                    <span style="font-weight:bold">Contact</span><br><br>
+                    <span>{{ 'messagebundle.client'|trans }}: </span><br>
+                        <a href="tel:+15149969835 ">+1-514-996-9835 </a> 
+        
+                        <br><br>
+                        <span>{{ 'messagebundle.technique'|trans }}: </span><br>
+                        <a href="tel:+237690072102">+237-690-072-102 </a>
+                
+                </div> 
+        </div>
+{% endblock %}
+</body>
+</html>

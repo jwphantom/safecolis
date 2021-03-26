@@ -1,0 +1,32 @@
+    <!-- Login Form Start -->
+    <div id="loginForm" class="login--form modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+
+                <div class="modal-body">
+                    <div class="title">
+                        <h2 class="h4">Login</h2>
+                    </div>
+
+                    <form method="post" action="{{ path('security_login_check') }}" data-form="validate">
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}"/>
+
+                        <div class="form-group">
+                            <input type="email" name="_username" placeholder="service@safecolis.com" placeholder="Your Email" class="form-control" required>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" name="_password" autocomplete="off" placeholder="Password" class="form-control" required>
+                        </div>
+
+                        <p class="help-block"><a href="{{ path('reset_password_form') }}">Forgot Your Password?</a></p>
+
+                        <button type="submit" class="btn btn-block btn-default text-uppercase">Login</button>
+                        <p>Nouveau? <a href="{{ path('register_form') }}">Inscription</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login Form End -->

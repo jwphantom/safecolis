@@ -1,0 +1,183 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+
+  /* message flash */
+
+  .btn-blue{
+    background: #0074d9;
+    color: white;
+  }
+  .btn-blue:hover{
+    background: black;
+    color: black;
+  }
+  .flash_message_success{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: green;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+  }
+  
+  .flash_message_danger{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: red;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #FFF;
+  }
+
+
+  .application .card-header div{
+    text-align: center;
+    width: 100%;
+  }
+
+  /* couleurs des icone dans la page application */
+  .application_education .card-header i  
+  {
+    color: #3abaf4;
+    font-size: 20px;
+
+  }
+  .application_agenda .card-header i  
+  {
+    color: #fc544b;
+    font-size: 20px;
+
+  }
+  .application_forum .card-header i  
+  {
+    color: #47c363;
+    font-size: 20px;
+
+  }
+  .application_news .card-header i  
+  {
+    color: #ffa426;
+    font-size: 20px;
+
+  }
+
+  /* couleurs des titres dans la page icone */
+  .application_education .card-header h4
+  {
+    color: #3abaf4;
+  }
+  .application_agenda .card-header h4
+  {
+    color: #fc544b;
+  }
+  .application_forum .card-header h4
+  {
+    color: #47c363;
+  }
+  .application_news .card-header h4
+  {
+    color: #ffa426;
+  }
+
+  .application_education:hover,
+  .application_forum:hover,
+  .application_agenda:hover,
+  .application_news:hover
+  {
+    background: rgb(231, 231, 231);
+  }
+
+  .application_education:hover a:hover,
+  .application_forum:hover a:hover,
+  .application_news:hover a:hover,
+  .application_agenda:hover a:hover{
+    text-decoration: none
+  }
+
+  .application_education a .card-body,
+  .application_forum a .card-body,
+  .application_agenda a .card-body,
+  .application_news a .card-body{
+    color:grey;
+  }
+
+
+  /* Form steps */
+ /* Latest compiled and minified CSS included as External Resource*/
+
+/* Optional theme */
+@import url('//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css');
+
+.stepwizard-step p {
+  margin-top: 0px;
+  color:#666;
+}
+.stepwizard-row {
+  display: table-row;
+}
+.stepwizard {
+  display: table;
+  width: 100%;
+  position: relative;
+}
+.stepwizard-step button[disabled] {
+  /*opacity: 1 !important;
+  filter: alpha(opacity=100) !important;*/
+}
+.stepwizard .btn.disabled, .stepwizard .btn[disabled], .stepwizard fieldset[disabled] .btn {
+  opacity:1 !important;
+  color:#bbb;
+}
+.stepwizard-row:before {
+  top: 14px;
+  bottom: 0;
+  position: absolute;
+  content:" ";
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  z-index: 0;
+}
+.stepwizard-step {
+  display: table-cell;
+  text-align: center;
+  position: relative;
+}
+.btn-circle {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  border-radius: 100px;
+  
+}
+
+
+.form-mandatory
+{
+  color: red;
+  font-weight: bold;
+}
+
+
+.panel-body .form-group .select_multiple{
+  height: 100px;;
+}
+
+
+.ck-editor__editable_inline {
+  min-height: 200px;
+}

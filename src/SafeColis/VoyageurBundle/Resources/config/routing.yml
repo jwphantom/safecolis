@@ -1,0 +1,7 @@
+safe_colis_voyageur_add:
+    path:     /voyager/add/{mode}/
+    defaults: { _controller: SafeColisVoyageurBundle:Add:add }
+
+safe_colis_voyageur_choice_transport:
+    path:     /voyager
+    defaults: { _controller: SafeColisVoyageurBundle:Choice:choice }

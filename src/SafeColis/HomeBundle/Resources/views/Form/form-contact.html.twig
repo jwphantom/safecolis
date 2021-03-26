@@ -1,0 +1,41 @@
+<form action="{{ path('safe_colis_mail_contact') }}" method="POST">
+<div class="status"></div>
+
+<div class="row">
+	<div class="col-sm-12">
+		<div class="form-group">
+            <label>Adresse email: </label>
+			{% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+			<input name="email" value="{{app.user.email}}" type="email" class="form-control" required>
+			{% else %}
+			<input name="email" placeholder="Votre Email" type="email" class="form-control" required>
+			{% endif %}
+
+				
+		</div>
+	</div>
+
+	<div class="col-sm-12">
+		<div class="form-group">
+            <label>Titre: </label>
+
+			<input name="titre" placeholder="Titre de votre mossage" type="text" class="form-control" required>
+		</div>
+	</div>
+	<div class="col-sm-12">
+        <label>Description: </label>
+        <textarea name="description" id="editor" class="editor">
+                                            
+        </textarea>
+	</div>
+	
+    
+
+	<div class="col-sm-12">
+        <br>
+		<button type="submit" class="btn btn-lg btn-block btn-default active">Valider<i class="ml--8 fa fa-long-arrow-right"></i>
+		</button>
+	</div>
+</div>
+
+</form>

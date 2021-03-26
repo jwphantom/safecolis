@@ -1,0 +1,30 @@
+{% extends "base.html.twig" %}
+{% block title %} {{ parent() }} - {{ namepage }} {% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/edit-button.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+{% block body %}
+<!-- Contact Section Start -->
+
+{% if mode == "aerien" %}
+{% set file1 = "Billet d'avion" %}
+{% set file2 = "Passport" %}
+{% endif %}
+{% if mode == "routier" %}
+{% set file1 = "Permis de conduire" %}
+{% set file2 = "Carte d'identité" %}
+{% endif %}
+{% if mode == "ferroviare" %}
+{% set file1 = "Ticket de Transport" %}
+{% set file2 = "Carte d'identité" %}
+{% endif %}
+
+<div class="contact--form">
+    <div class="title text-center">
+        <p>Bien vouloir renseigner tous les champs du formulaire (Temps estimatif : 5minutes).</p>
+    </div>
+    {% include ("SafeColisVoyageurBundle:form:form.html.twig") %}
+</div>
+<!-- Contact Form End -->
+
+{% endblock %}

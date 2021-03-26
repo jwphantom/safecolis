@@ -1,0 +1,25 @@
+<!-- Login Form Start -->
+<div id="userMenu" class="login--form modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal-body">
+                <div class="title">
+                    <h2 class="h4">Menu</h2>
+                </div>
+                <button  class="btn btn-block btn-default"  onclick="location.href='{{ path('profile_view') }}'"><i class="fa fa-user" aria-hidden="true"></i>
+                    Profile</button>
+                <button class="btn btn-block btn-default" onclick="location.href='{{ path('change_password') }}'"><i class="fa fa-key" aria-hidden="true"></i> Mot de
+                    passe</button>
+                <button class="btn btn-block btn-default" onclick="location.href='{{ path('safe_colis_abonnement_status') }}'"><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                    Abonnement</button>
+                <button onclick="location.href='{{ path('safe_colis_reservation_menu') }}'" class="btn btn-block btn-default "><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Reservations</button>
+                <button onclick="location.href='{{ path('security_logout') }}'" class="btn btn-block btn-default "><i class="fa fa-sign-out" aria-hidden="true"></i>
+                    Deconnexion</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Form End -->

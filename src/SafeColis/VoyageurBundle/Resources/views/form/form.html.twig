@@ -1,0 +1,76 @@
+{{ form_start(form, {'attr': {'class': ''}}) }}
+
+<div class="status"></div>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="form-group">
+			{{ form_widget(form.villedepart, {'id': 'searchTextField' , 'attr': {'class': 'form-control'}})}}
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			{{ form_widget(form.villearrive, {'id': 'searchTextField2' , 'attr': {'class': 'form-control'}})}}
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			<input name="heuredepart" placeholder="Heure de départ" type="text" onmouseover="(this.type = 'time')" onmouseout="(this.type = 'text')" id="date" class="form-control" required>
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			<input name="dateDepart" placeholder="Date de départ" type="text" onmouseover="(this.type = 'date')" id="date" class="form-control" required>
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			<input name="kilodispo" placeholder="Kilo disponilbe" type="number" class="form-control" required>
+		</div>
+	</div>
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			<input name="prixkilo" placeholder="Prix / kilo" type="number" class="form-control" required>
+		</div>
+	</div>
+
+
+	<div class="col-sm-6">
+		<div class="form-group">
+			{{ form_widget(form.justification,{'id': 'inputupload' , 'attr': {'class': ''}})}}
+			<label for="voyageur_justification_file" id="buttonupload">
+				<i class="fa fa-upload"></i>&nbsp; {{ file1 }}</label>
+
+
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="form-group">
+			{{ form_widget(form.identification, {'id': 'inputupload' , 'attr': {'class': ''}})}}
+			<label for="voyageur_identification_file" id="buttonupload">
+				<i class="fa fa-upload"></i>&nbsp; {{ file2}} </label>
+
+		</div>
+	</div>
+
+	<div class="col-sm-12">
+		<div class="form-group">
+
+			{{ form_widget(form.termcondition, {'attr': {'class': 'form-check-input'}})}}
+
+		</div>
+	</div>
+
+	<div class="col-sm-12">
+		<button type="submit" class="btn btn-lg btn-block btn-default active">Valider<i class="ml--8 fa fa-long-arrow-right"></i>
+		</button>
+	</div>
+</div>
+{{ form_rest(form) }}
+
+{{ form_end(form) }}

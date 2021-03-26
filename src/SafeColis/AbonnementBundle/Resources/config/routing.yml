@@ -1,0 +1,28 @@
+safe_colis_abonnement_subscription:
+    path:     /subscription/pay/{plan}
+    defaults: { _controller: SafeColisAbonnementBundle:Subscription:subscribe }
+
+safe_colis_abonnement_change_subscription:
+    path:     /subscription/change/{plan}
+    defaults: { _controller: SafeColisAbonnementBundle:ChangeSubscription:changesubscription }
+
+
+
+
+safe_colis_abonnement_end_subscription:
+    path:     /subscription/end
+    defaults: { _controller: SafeColisAbonnementBundle:EndSubscription:endsubscription }
+
+
+
+
+
+safe_colis_abonnement_status:
+    path:     /subscription
+    defaults: { _controller: SafeColisAbonnementBundle:Subscription:view }
+
+
+safe_colis_abonnement_re_subscription:
+    path:     /webhook
+    defaults: { _controller: SafeColisAbonnementBundle:ReSubscription:webhook }
+

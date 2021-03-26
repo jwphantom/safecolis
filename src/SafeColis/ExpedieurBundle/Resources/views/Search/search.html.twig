@@ -1,0 +1,30 @@
+{% extends "base-dash.html.twig" %}
+{% block title %}
+{{ parent() }}
+-
+{{ namepage }}
+{% endblock %}
+{% block namepage %}
+<img src="{{asset('Ressources/img/icon/loupe.svg')}}" width="30" /> {{ namepage }}
+{% endblock %}
+{% block body %}
+
+
+{% for message in app.flashes('voyage_non_trouve')%}
+<div class="col-12" id="FlashMessageDanger">
+	0 Voyage(s) trouvé(s)
+</div>
+{% endfor %}
+
+<div class="container statutAbonnement">
+	<div class="block2">
+
+	
+		<div class="form_search">
+			{% include ("SafeColisExpedieurBundle:Form:form.html.twig") %}
+
+		</div>
+	</div>
+</div>
+
+{% endblock %}

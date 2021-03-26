@@ -1,0 +1,18 @@
+<!-- Login Form Start -->
+<div id="formDelete-{{ item.id }}" class="login--form modal fade">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+
+            <div class="modal-body">
+                <div class="title">
+                    <h2 class="h4">Confirmer la suppression?</h2>
+                </div>
+                <div class="">
+                </div>
+                <a href="{{ path('safe_colis_reservation_supprmier', {'id':item.id}) }}" class="col-sm-12" id="buttonWarning">Valider</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Login Form End -->

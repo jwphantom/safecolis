@@ -1,0 +1,12 @@
+safe_colis_expedieur_recherche_voyage:
+    path:     /voyages/recherche
+    defaults: { _controller: SafeColisExpedieurBundle:Search:search }
+
+safe_colis_expedieur_list_voyage:
+    path:     /voyages
+    defaults: { _controller: SafeColisExpedieurBundle:List:list }
+
+
+safe_colis_expedieur_reservation:
+    path:     /voyages/reserver/
+    defaults: { _controller: SafeColisExpedieurBundle:Reservation:reserver }

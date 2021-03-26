@@ -1,0 +1,42 @@
+<form action="{{ path('safe_colis_abonnement_status')}}" method="POST">
+
+    <div class="row" id="formAbonnement" style="display: none">
+        <div class="col-md-12 col-xs-6 col-xxs-12 pb--30">
+            <!-- Feature Item Start -->
+            <div class="profile style--1 text-center">
+
+                <div class="desc">
+                    <div class="form-group" style="text-align: left">
+                        <label>choisir votre plan : </label>
+                        <select name="plan" class="form-control" id="selectPlan">
+                            <option value="month">Menseul - <strong>${{ subs_month }}/month</strong> - 5 reservations</option>
+                            <option value="6months">6 Mois - <strong>${{ subs_6months }}/6month</strong> - Illimités reservations</option>
+                            <option value="year">Annuel - <strong>${{ subs_year }}/year</strong> - Illimités reservations</option>
+                        </select>
+                    </div>
+
+                </div>
+                {% if abonnement.active == 0 %}
+                <div class="action text-right">
+                    <br>
+                    <div class="col-sm-6 col-xs-12">
+                        <button type="submit" id="formAbonnement" class="btn btn-default col-sm-12 col-xs-12 ">Valider<i
+                                class="ml--5 fa fa-long-arrow-right"></i></button>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <a id="AnnulerformAbonnement" class="btn btn-default col-sm-12 col-xs-12 active">Annuler<i
+                                class="ml--5 fa fa-long-arrow-up"></i></a>
+
+                    </div>
+
+
+                </div>
+                {% endif %}
+
+            </div>
+            <!-- Feature Item End -->
+        </div>
+    </div>
+
+
+</form>
