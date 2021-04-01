@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "54a48a2029b3f224e8c2fb8c8c4f0032",
+    "content-hash": "2910f4150a40684e590937189a420398",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -57,16 +57,16 @@
         },
         {
             "name": "cloudinary/cloudinary_php",
-            "version": "dev-master",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cloudinary/cloudinary_php.git",
-                "reference": "0f760ca83c5b946aa8c427bd39945a8bd125750e"
+                "reference": "71f6f3289e3e17bf7c69bc378d0d69596e530f79"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/0f760ca83c5b946aa8c427bd39945a8bd125750e",
-                "reference": "0f760ca83c5b946aa8c427bd39945a8bd125750e",
+                "url": "https://api.github.com/repos/cloudinary/cloudinary_php/zipball/71f6f3289e3e17bf7c69bc378d0d69596e530f79",
+                "reference": "71f6f3289e3e17bf7c69bc378d0d69596e530f79",
                 "shasum": ""
             },
             "require": {
@@ -86,7 +86,6 @@
                 "phpunit/phpunit": "^5",
                 "squizlabs/php_codesniffer": "3.*"
             },
-            "default-branch": true,
             "type": "library",
             "autoload": {
                 "classmap": [
@@ -115,9 +114,9 @@
             "support": {
                 "email": "info@cloudinary.com",
                 "issues": "https://github.com/cloudinary/cloudinary_php/issues",
-                "source": "https://github.com/cloudinary/cloudinary_php/tree/master"
+                "source": "https://github.com/cloudinary/cloudinary_php/tree/2.1.1"
             },
-            "time": "2021-03-18T06:49:41+00:00"
+            "time": "2021-03-17T00:47:44+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -4024,9 +4023,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "cloudinary/cloudinary_php": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

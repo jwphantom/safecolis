@@ -1,6 +1,6 @@
 # This file is auto-generated during the composer install
 parameters:
-    database_host: j5zntocs2dn6c3fj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com	
+    database_host: j5zntocs2dn6c3fj.chr7pe7iynqr.eu-west-1.rds.amazonaws.com
     database_port: 3306
     database_name: jxakl8j0c47n1gmd
     database_user: m5m70n0ubth4qt3c
@@ -14,4 +14,8 @@ parameters:
     app_version: 0.2.0
     mailer_port: 587
     mailer_encryption: tls
+    subs_month : 5.75
+    subs_6months : 20.5
+    subs_year: 35.25
+    form_themes:
     secret: ThisTokenIsNotSoSecretChangeIt

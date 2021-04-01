@@ -43,6 +43,9 @@ twig:
         app_phone : +15149969835
         app_version : 0.1.0
         app_name: SafeColis
+        subs_month : 5.75
+        subs_6months : 20.5
+        subs_year: 35.25
     form_themes:
         - 'bootstrap_3_layout.html.twig'
 
